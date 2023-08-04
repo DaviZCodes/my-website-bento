@@ -11,7 +11,7 @@ export default function ContactSection() {
         </h2>
         <p className="text-xl text-white">
           I&apos;m open to collaborating on projects, whether it is coding,
-          designing, video-making or anythings. Feel free to reach out to me
+          designing, video-making or anything. Feel free to reach out to me
           through any of the links below:
         </p>
         <div className="flex justify-center py-6 gap-8">
