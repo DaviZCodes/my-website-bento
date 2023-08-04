@@ -18,9 +18,9 @@ const Home = () => {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-lg">
-            Hello, I'm Davi, a full-stack developer passionate about creating
-            modern and responsive applications. I am highly interested in
-            creating Artificial Intelligence tools to automate.
+            Hello, I&apos;m Davi, a full-stack developer passionate about
+            creating modern and responsive applications. I am highly interested
+            in creating Artificial Intelligence tools to automate.
           </p>
         </div>
       </section>
