@@ -49,7 +49,7 @@ const Home = () => {
               <p>
                 I was a full-stack engineer, developing several responsive
                 webpages, enhancing the user authentication and payment
-                gateways, and creating APIs for fetching user data and shops.
+                gateways, and creating APIs that fetch user data and shops.
               </p>
             </div>
             <div className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
@@ -66,7 +66,7 @@ const Home = () => {
               <p>
                 I was a tutor for the Introduction to Programming, Data
                 Structures and Algorithms, and Object-Oriented Programming
-                courses.
+                courses at NYU.
               </p>
             </div>
             <div className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
@@ -107,9 +107,13 @@ const Home = () => {
                   and colorful artworks.
                 </p>
                 <div className="flex justify-center gap-2 pt-2">
-                  <SiTypescript size={45} color="#007acc" />
-                  <TbBrandNextjs size={50} color="black" />
-                  <SiTailwindcss size={50} color="#03a9f4" />
+                  <SiTypescript size={45} color="#007acc" title="Typescript" />
+                  <TbBrandNextjs size={50} color="black" title="NextJs" />
+                  <SiTailwindcss
+                    size={50}
+                    color="#03a9f4"
+                    title="Tailwind CSS"
+                  />
                   <div className="w-11 h-11">
                     <Image
                       src="/convex.png"
@@ -117,6 +121,7 @@ const Home = () => {
                       height={0}
                       sizes="100vw"
                       className="w-full h-full"
+                      title="Convex.dev"
                       alt="Convex Logo"
                     />
                   </div>
@@ -127,6 +132,7 @@ const Home = () => {
                       height={0}
                       sizes="100vw"
                       className="w-full h-full"
+                      title="Replicate.com"
                       alt="Replicate Logo"
                     />
                   </div>
@@ -148,12 +154,12 @@ const Home = () => {
                   raw chicken - pets.
                 </p>
                 <div className="flex justify-center gap-2 pt-2">
-                  <SiTypescript size={45} color="#007acc" />
-                  <DiReact size={50} color="#61dbfb" />
-                  <DiSass size={50} color="#c69" />
-                  <DiNodejsSmall size={50} color="#3C873A" />
-                  <SiExpress size={50} color="grey" />
-                  <BiLogoMongodb size={50} color="#4DB33D" />
+                  <SiTypescript size={45} color="#007acc" title="Typescript" />
+                  <DiReact size={50} color="#61dbfb" title="React" />
+                  <DiSass size={50} color="#c69" title="SASS" />
+                  <DiNodejsSmall size={50} color="#3C873A" title="NodeJS" />
+                  <SiExpress size={50} color="grey" title="ExpressJS" />
+                  <BiLogoMongodb size={50} color="#4DB33D" title="MongoDB" />
                 </div>
               </div>
             </Link>
@@ -183,6 +189,7 @@ const Home = () => {
                       height={0}
                       sizes="100vw"
                       className="w-full h-full"
+                      title="Python"
                       alt="Python Logo"
                     />
                   </div>
@@ -193,7 +200,8 @@ const Home = () => {
                       height={0}
                       sizes="100vw"
                       className="w-full h-full"
-                      alt="openCV Logo"
+                      title="OpenCV"
+                      alt="OpenCV Logo"
                     />
                   </div>
                   <div className="w-11 h-11">
@@ -203,10 +211,11 @@ const Home = () => {
                       height={0}
                       sizes="100vw"
                       className="w-full h-full"
+                      title="AprilTag"
                       alt="AprilTag Logo"
                     />
                   </div>
-                  <SiRos size={39} color="black" />
+                  <SiRos size={39} color="black" title="ROS" />
                 </div>
               </div>
             </Link>
@@ -222,9 +231,9 @@ const Home = () => {
                 <h3 className="text-xl font-bold mb-2">To-do list</h3>
                 <p>Simple to-do list to get your work done!</p>
                 <div className="flex justify-center gap-2 pt-2">
-                  <SiTypescript size={45} color="#007acc" />
-                  <DiReact size={50} color="#61dbfb" />
-                  <DiNodejsSmall size={50} color="#3C873A" />
+                  <SiTypescript size={45} color="#007acc" title="Typescript" />
+                  <DiReact size={50} color="#61dbfb" title="React" />
+                  <DiNodejsSmall size={50} color="#3C873A" title="NodeJS" />
                 </div>
               </div>
             </Link>
@@ -247,6 +256,7 @@ const Home = () => {
                       height={0}
                       sizes="100vw"
                       className="w-full h-full"
+                      title="Python"
                       alt="Python Logo"
                     />
                   </div>
