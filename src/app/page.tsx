@@ -6,32 +6,30 @@ import { DiReact, DiSass, DiNodejsSmall } from "react-icons/di";
 import { BiLogoMongodb } from "react-icons/bi";
 import { SiTypescript, SiTailwindcss, SiRos, SiExpress } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import Header from "./components/Header";
 
 const Home = () => {
   return (
     <div className="min-h-screen p-1 bg-gray-100">
-      <header className="bg-blue-800 py-8 p-2">
-        <div className="container mx-auto text-white text-center">
-          <h1 className="text-3xl font-bold pb-3">Davi Zheng</h1>
-          <div className="text-xl">Full-Stack Engineer</div>
-          <div className="text-xl">Computer Science Student @ NYU</div>
-        </div>
-      </header>
+      <Header />
 
       {/* About Me */}
-      <section className="py-12 p-2">
+      <section className="py-12 px-3 lg:px-5">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-lg">
-            Hello, I&apos;m Davi, a full-stack developer passionate about
-            creating modern and responsive applications. I am highly interested
-            in creating Artificial Intelligence tools.
+            Hello, I&apos;m Davi, a multifaceted full-stack engineer passionate
+            about creating modern and responsive applications. I'm fluent in
+            four languages - English, Mandarin, Spanish, and Portuguese. I'm
+            also fluent in four programming languages - Python, C, C++, and
+            Javascript/Typescript. Recently, I have gained high interest in
+            developing Artificial Intelligence tools.
           </p>
         </div>
       </section>
 
       {/* Work Experience */}
-      <section className="bg-white py-12">
+      <section className="bg-white py-12 px-2 lg:px-3">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -48,7 +46,11 @@ const Home = () => {
                   Paysfer eMart
                 </Link>
               </h2>
-              <p>Short description of project 2.</p>
+              <p>
+                I was a full-stack engineer, developing several responsive
+                webpages, enhancing the user authentication and payment
+                gateways, and creating APIs for fetching user data and shops.
+              </p>
             </div>
             <div className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]">
               <h3 className="text-xl font-bold mb-2">Computer Science Tutor</h3>
@@ -91,7 +93,7 @@ const Home = () => {
       </section>
 
       {/* Projects */}
-      <section className="py-12">
+      <section className="py-12 px-2 lg:px-3">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-4">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -158,7 +160,7 @@ const Home = () => {
             </Link>
 
             <Link
-              href="https://engineering.nyu.edu/research-innovation/student-research/vertically-integrated-projects/vip-teams/nyu-robotic-design-team"
+              href="https://drive.google.com/file/d/1dE2FKNiOciM-4UD2Voa2ywq771438TMr/view?usp=sharing"
               target="_blank"
             >
               <div
@@ -225,6 +227,15 @@ const Home = () => {
                   <DiReact size={50} color="#61dbfb" />
                   <DiNodejsSmall size={50} color="#3C873A" />
                 </div>
+              </div>
+            </Link>
+
+            <Link href="" target="_blank">
+              <div
+                className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]"
+                title="Click for more"
+              >
+                <h3 className="text-xl font-bold mb-2">More coming soon...</h3>
               </div>
             </Link>
           </div>

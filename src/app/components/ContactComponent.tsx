@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function ContactSection() {
   return (
-    <section className="bg-blue-800 py-6">
+    <section className="bg-blue-800 py-6 px-2 lg:px-3">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold text-white mb-4">
           Let&apos;s Connect
