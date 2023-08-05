@@ -220,11 +220,36 @@ const Home = () => {
                 title="Click for more"
               >
                 <h3 className="text-xl font-bold mb-2">To-do list</h3>
-                <p>Simple to-do list to get your work done!.</p>
+                <p>Simple to-do list to get your work done!</p>
                 <div className="flex justify-center gap-2 pt-2">
                   <SiTypescript size={45} color="#007acc" />
                   <DiReact size={50} color="#61dbfb" />
                   <DiNodejsSmall size={50} color="#3C873A" />
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="https://github.com/DaviZCodes/my-discord-bot"
+              target="_blank"
+            >
+              <div
+                className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]"
+                title="Click for more"
+              >
+                <h3 className="text-xl font-bold mb-2">Discord Bot</h3>
+                <p>Interactive discord bot with several functionalities.</p>
+                <div className="flex justify-center gap-2 pt-2">
+                  <div className="w-11 h-11">
+                    <Image
+                      src="/python.png"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      className="w-full h-full"
+                      alt="Python Logo"
+                    />
+                  </div>
                 </div>
               </div>
             </Link>
