@@ -19,10 +19,10 @@ const Home = () => {
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-lg">
             Hello, I&apos;m Davi, a multifaceted full-stack engineer passionate
-            about creating modern and responsive applications. I'm fluent in
-            four languages - English, Mandarin, Spanish, and Portuguese. I'm
-            also fluent in four programming languages - Python, C, C++, and
-            Javascript/Typescript. Recently, I have gained high interest in
+            about creating modern and responsive applications. I&apos;m fluent
+            in four languages - English, Mandarin, Spanish, and Portuguese.
+            I&apos;m also fluent in four programming languages - Python, C, C++,
+            and Javascript/Typescript. Recently, I have gained high interest in
             developing Artificial Intelligence tools.
           </p>
         </div>
