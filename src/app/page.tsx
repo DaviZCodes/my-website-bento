@@ -103,7 +103,7 @@ const Home = () => {
               >
                 <h3 className="text-xl font-bold mb-2">Generative AI</h3>
                 <p>
-                  Generative AI website that tranforms scribbles into realistic
+                  Generative AI website that transforms scribbles into realistic
                   and colorful artworks.
                 </p>
                 <div className="flex justify-center gap-2 pt-2">
