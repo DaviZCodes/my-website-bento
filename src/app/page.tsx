@@ -1,6 +1,11 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import ContactSection from "./components/ContactComponent";
+import { DiReact, DiSass, DiNodejsSmall } from "react-icons/di";
+import { BiLogoMongodb } from "react-icons/bi";
+import { SiTypescript, SiTailwindcss, SiRos, SiExpress } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 
 const Home = () => {
   return (
@@ -20,7 +25,7 @@ const Home = () => {
           <p className="text-lg">
             Hello, I&apos;m Davi, a full-stack developer passionate about
             creating modern and responsive applications. I am highly interested
-            in creating Artificial Intelligence tools to automate.
+            in creating Artificial Intelligence tools.
           </p>
         </div>
       </section>
@@ -57,8 +62,9 @@ const Home = () => {
                 </Link>
               </h2>
               <p>
-                Tutor for the Introduction to Programming, Data Structures and
-                Algorithms, and Object-Oriented Programming courses.
+                I was a tutor for the Introduction to Programming, Data
+                Structures and Algorithms, and Object-Oriented Programming
+                courses.
               </p>
             </div>
             <div className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]">
@@ -74,7 +80,11 @@ const Home = () => {
                   TutorMundi
                 </Link>
               </h2>
-              <p>E-learning</p>
+              <p>
+                I was a frontend software engineer, identifying and resolving
+                numerous bugs, while also making improvements to the user
+                interface.
+              </p>
             </div>
           </div>
         </div>
@@ -95,6 +105,31 @@ const Home = () => {
                   Generative AI website that tranforms scribbles into realistic
                   and colorful artworks.
                 </p>
+                <div className="flex justify-center gap-2 pt-2">
+                  <SiTypescript size={45} color="#007acc" />
+                  <TbBrandNextjs size={50} color="black" />
+                  <SiTailwindcss size={50} color="#03a9f4" />
+                  <div className="w-11 h-11">
+                    <Image
+                      src="/convex.png"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      className="w-full h-full"
+                      alt="Convex Logo"
+                    />
+                  </div>
+                  <div className="w-11 h-11">
+                    <Image
+                      src="/replicate.png"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      className="w-full h-full"
+                      alt="Replicate Logo"
+                    />
+                  </div>
+                </div>
               </div>
             </Link>
 
@@ -111,6 +146,14 @@ const Home = () => {
                   A blog for pet lovers who wish to share about their furry - or
                   raw chicken - pets.
                 </p>
+                <div className="flex justify-center gap-2 pt-2">
+                  <SiTypescript size={45} color="#007acc" />
+                  <DiReact size={50} color="#61dbfb" />
+                  <DiSass size={50} color="#c69" />
+                  <DiNodejsSmall size={50} color="#3C873A" />
+                  <SiExpress size={50} color="grey" />
+                  <BiLogoMongodb size={50} color="#4DB33D" />
+                </div>
               </div>
             </Link>
 
@@ -125,7 +168,45 @@ const Home = () => {
                 <h3 className="text-xl font-bold mb-2">
                   Lunar excavator robot
                 </h3>
-                <p>Robotic Design Team</p>
+                <p>
+                  Implemented an AprilTag/sensor data program that allows the
+                  robot to detect objects and calibrate itself. Wrote autonomous
+                  locomotion, excavation, and deposition scripts using ROS
+                  nodes.
+                </p>
+                <div className="flex justify-center gap-2 pt-2">
+                  <div className="w-11 h-11">
+                    <Image
+                      src="/python.png"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      className="w-full h-full"
+                      alt="Python Logo"
+                    />
+                  </div>
+                  <div className="w-11 h-10">
+                    <Image
+                      src="/opencv.png"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      className="w-full h-full"
+                      alt="openCV Logo"
+                    />
+                  </div>
+                  <div className="w-11 h-11">
+                    <Image
+                      src="/apriltag.png"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      className="w-full h-full"
+                      alt="AprilTag Logo"
+                    />
+                  </div>
+                  <SiRos size={39} color="black" />
+                </div>
               </div>
             </Link>
 
@@ -139,6 +220,11 @@ const Home = () => {
               >
                 <h3 className="text-xl font-bold mb-2">To-do list</h3>
                 <p>Simple to-do list to get your work done!.</p>
+                <div className="flex justify-center gap-2 pt-2">
+                  <SiTypescript size={45} color="#007acc" />
+                  <DiReact size={50} color="#61dbfb" />
+                  <DiNodejsSmall size={50} color="#3C873A" />
+                </div>
               </div>
             </Link>
           </div>
