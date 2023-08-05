@@ -7,6 +7,7 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { SiTypescript, SiTailwindcss, SiRos, SiExpress } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import Header from "./components/Header";
+import Skills from "./components/Skills";
 
 const Home = () => {
   return (
@@ -52,6 +53,7 @@ const Home = () => {
                 gateways, and creating APIs that fetch user data and shops.
               </p>
             </div>
+
             <div className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
               <h3 className="text-xl font-bold mb-2">Computer Science Tutor</h3>
               <h2 className="text-xl cursor-pointer text-purple-800 font-semibold">
@@ -69,6 +71,7 @@ const Home = () => {
                 courses at NYU.
               </p>
             </div>
+
             <div className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
               <h3 className="text-xl font-bold mb-2">
                 Software Engineer Intern
@@ -141,30 +144,6 @@ const Home = () => {
             </Link>
 
             <Link
-              href="https://github.com/DaviZCodes/pet-peeves-blog"
-              target="_blank"
-            >
-              <div
-                className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]"
-                title="Click for more"
-              >
-                <h3 className="text-xl font-bold mb-2">MERN Blog</h3>
-                <p>
-                  A blog for pet lovers who wish to share about their furry - or
-                  raw chicken - pets.
-                </p>
-                <div className="flex justify-center gap-2 pt-2">
-                  <SiTypescript size={45} color="#007acc" title="Typescript" />
-                  <DiReact size={50} color="#61dbfb" title="React" />
-                  <DiSass size={50} color="#c69" title="SASS" />
-                  <DiNodejsSmall size={50} color="#3C873A" title="NodeJS" />
-                  <SiExpress size={50} color="grey" title="ExpressJS" />
-                  <BiLogoMongodb size={50} color="#4DB33D" title="MongoDB" />
-                </div>
-              </div>
-            </Link>
-
-            <Link
               href="https://drive.google.com/file/d/1dE2FKNiOciM-4UD2Voa2ywq771438TMr/view?usp=sharing"
               target="_blank"
             >
@@ -176,7 +155,7 @@ const Home = () => {
                   Lunar excavator robot
                 </h3>
                 <p>
-                  Implemented an AprilTag/sensor data program that allows the
+                  Implemented an AprilTag/sensor data program, allowing the
                   robot to detect objects and calibrate itself. Wrote autonomous
                   locomotion, excavation, and deposition scripts using ROS
                   nodes.
@@ -216,6 +195,30 @@ const Home = () => {
                     />
                   </div>
                   <SiRos size={39} color="black" title="ROS" />
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="https://github.com/DaviZCodes/pet-peeves-blog"
+              target="_blank"
+            >
+              <div
+                className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]"
+                title="Click for more"
+              >
+                <h3 className="text-xl font-bold mb-2">MERN Blog</h3>
+                <p>
+                  A blog for pet lovers who wish to share about their furry - or
+                  raw chicken - pets.
+                </p>
+                <div className="flex justify-center gap-2 pt-2">
+                  <SiTypescript size={45} color="#007acc" title="Typescript" />
+                  <DiReact size={50} color="#61dbfb" title="React" />
+                  <DiSass size={50} color="#c69" title="SASS" />
+                  <DiNodejsSmall size={50} color="#3C873A" title="NodeJS" />
+                  <SiExpress size={50} color="grey" title="ExpressJS" />
+                  <BiLogoMongodb size={50} color="#4DB33D" title="MongoDB" />
                 </div>
               </div>
             </Link>
@@ -275,6 +278,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <Skills />
 
       {/* Contact */}
       <ContactSection />
