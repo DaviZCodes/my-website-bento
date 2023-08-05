@@ -33,7 +33,7 @@ const Home = () => {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]">
+            <div className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
               <h3 className="text-xl font-bold mb-2">
                 Software Engineer Intern
               </h3>
@@ -52,7 +52,7 @@ const Home = () => {
                 gateways, and creating APIs for fetching user data and shops.
               </p>
             </div>
-            <div className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]">
+            <div className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
               <h3 className="text-xl font-bold mb-2">Computer Science Tutor</h3>
               <h2 className="text-xl cursor-pointer text-purple-800 font-semibold">
                 <Link
@@ -69,7 +69,7 @@ const Home = () => {
                 courses.
               </p>
             </div>
-            <div className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]">
+            <div className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
               <h3 className="text-xl font-bold mb-2">
                 Software Engineer Intern
               </h3>
@@ -83,9 +83,8 @@ const Home = () => {
                 </Link>
               </h2>
               <p>
-                I was a frontend software engineer, identifying and resolving
-                numerous bugs, while also making improvements to the user
-                interface.
+                I was a frontend developer, identifying and resolving numerous
+                bugs, while also making improvements to the user interface.
               </p>
             </div>
           </div>
