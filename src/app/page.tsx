@@ -21,10 +21,10 @@ const Home = () => {
           <p className="text-lg">
             Hello, I&apos;m Davi, a multifaceted full-stack engineer passionate
             about creating modern and responsive applications. I&apos;m fluent
-            in four languages - English, Mandarin, Spanish, and Portuguese.
-            I&apos;m also fluent in four programming languages - Python, C, C++,
-            and Javascript/Typescript. Recently, I have gained high interest in
-            developing Artificial Intelligence tools.
+            in four programming languages - Python, C, C++, and
+            Javascript/Typescript. I&apos;m also fluent in four languages -
+            English, Mandarin, Spanish, and Portuguese. Recently, I have gained
+            high interest in developing Artificial Intelligence tools.
           </p>
         </div>
       </section>
@@ -106,7 +106,9 @@ const Home = () => {
                 className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]"
                 title="Click for more"
               >
-                <h3 className="text-xl font-bold mb-2">Generative AI</h3>
+                <h3 className="text-xl font-bold mb-2">
+                  Arter - Generative AI
+                </h3>
                 <p>
                   Generative AI website that transforms scribbles into realistic
                   and colorful artworks.
@@ -209,7 +211,9 @@ const Home = () => {
                 className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]"
                 title="Click for more"
               >
-                <h3 className="text-xl font-bold mb-2">MERN Blog</h3>
+                <h3 className="text-xl font-bold mb-2">
+                  Pet Peeves - MERN Blog
+                </h3>
                 <p>
                   A blog for pet lovers who wish to share about their furry - or
                   raw chicken - pets.
