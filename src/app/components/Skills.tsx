@@ -8,7 +8,7 @@ export default function Skills() {
             Python, OpenCV, AprilTag, ROS, Machine Learning, Convolutional
             Neural Networks
           </li>
-          <li>C, C++</li>
+          <li>C, C++, x86 Assembly</li>
           <li>
             JavaScript, TypeScript, React, NextJS, Tailwind, SCSS, NodeJS,
             Express, Convex.dev, Postman, SQL, MongoDB
