@@ -22,12 +22,13 @@ export default function Skills() {
         <h2 className="text-3xl font-bold mt-6 mb-4">Hobbies</h2>
         <ul className="list-disc pl-3">
           <li>
-            I love playing chess. I just started playing two years ago and I'm
-            rated around 1700 on chess.com.
+            I love playing chess. I just started playing two years ago and
+            I&apos;m rated around 1700 on chess.com. Challenge me.
           </li>
           <li>
             I actively play sports and work out. Wanna play basketball,
-            football, volleyball, badminton, jog and lift together?
+            football, volleyball, badminton, jog and lift together? (I want a
+            six pack.)
           </li>
         </ul>
       </div>
