@@ -28,8 +28,8 @@ export default function Skills() {
           </li>
           <li>
             I actively play sports and work out. Wanna play basketball,
-            football, volleyball, badminton, jog and lift together? (I want a
-            six pack.)
+            football, volleyball, badminton, jog and lift together? (I am trying
+            to bench 225 pounds and get a six pack)
           </li>
         </ul>
       </div>
