@@ -29,9 +29,8 @@ export default function Skills() {
           <li>
             I actively play sports and work out. I have played varsity
             basketball, varsity football, and badminton at a state level. Would
-            you like to play football, volleyball, badminton, jog or lift
-            together? (I am actively aiming to bench 225 pounds and acquire a
-            six pack)
+            you like to work out together? (My goal is to bench 225 pounds and
+            acquire a six pack)
           </li>
         </ul>
       </div>
