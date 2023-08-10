@@ -10,9 +10,9 @@ export default function ContactSection() {
           Let&apos;s Connect
         </h2>
         <p className="text-xl text-white">
-          I&apos;m open to meeting new friends whether it is collaborating on
-          projects, video-making, or even working out. Feel free to reach out to
-          me through any of the links below:
+          I&apos;m open to meeting new people whether it is collaborating on
+          projects, video-making, or working out. Feel free to reach out to me
+          through any of the links below:
         </p>
         <div className="flex justify-center py-6 gap-8">
           <Link href="https://github.com/DaviZCodes">

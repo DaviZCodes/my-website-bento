@@ -24,12 +24,14 @@ export default function Skills() {
         <ul className="list-disc pl-3">
           <li>
             I love playing chess. I just started playing two years ago and
-            I&apos;m rated around 1700 on chess.com. Challenge me.
+            I&apos;m rated around 1800 on chess.com. Challenge me.
           </li>
           <li>
-            I actively play sports and work out. Wanna play basketball,
-            football, volleyball, badminton, jog and lift together? (I am trying
-            to bench 225 pounds and get a six pack)
+            I actively play sports and work out. I have played varsity
+            basketball, varsity football, and badminton at a state level. Would
+            you like to play football, volleyball, badminton, jog or lift
+            together? (I am actively aiming to bench 225 pounds and acquire a
+            six pack)
           </li>
         </ul>
       </div>

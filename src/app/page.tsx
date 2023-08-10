@@ -230,6 +230,33 @@ const Home = () => {
             </Link>
 
             <Link
+              href="https://github.com/DaviZCodes/pet-peeves-blog"
+              target="_blank"
+            >
+              <div
+                className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]"
+                title="Click for more"
+              >
+                <h3 className="text-xl font-bold mb-2">
+                  GitHub Licenses Ranked
+                </h3>
+                <p>
+                  Complex GitHub licenses are simplified and ranked to help
+                  developers choose the proper license for their repository.
+                </p>
+                <div className="flex justify-center gap-2 pt-2">
+                  <SiTypescript size={45} color="#007acc" title="Typescript" />
+                  <TbBrandNextjs size={50} color="black" title="NextJs" />
+                  <SiTailwindcss
+                    size={50}
+                    color="#03a9f4"
+                    title="Tailwind CSS"
+                  />
+                </div>
+              </div>
+            </Link>
+
+            <Link
               href="https://react-to-do-list-frontend.vercel.app"
               target="_blank"
             >
@@ -270,15 +297,6 @@ const Home = () => {
                     />
                   </div>
                 </div>
-              </div>
-            </Link>
-
-            <Link href="" target="_blank">
-              <div
-                className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]"
-                title="Click for more"
-              >
-                <h3 className="text-xl font-bold mb-2">More coming soon...</h3>
               </div>
             </Link>
           </div>
