@@ -16,13 +16,16 @@ export default function ContactSection() {
         </p>
         <div className="flex justify-center py-6 gap-8">
           <Link href="https://github.com/DaviZCodes">
-            <BsGithub size={50} color="white" />
+            <span className="sr-only">Visit my GitHub profile</span>
+            <BsGithub size={50} color="white" title="My GitHub profile" />
           </Link>
           <Link href="https://www.linkedin.com/in/davizheng/">
-            <BsLinkedin size={50} color="white" />
+            <span className="sr-only">Visit my LinkedIn profile</span>
+            <BsLinkedin size={50} color="white" title="My LinkedIn profile" />
           </Link>
           <Link href="mailto:daviz.contactme@gmail.com">
-            <AiOutlineMail size={50} color="white" />
+            <span className="sr-only">Send me an email </span>
+            <AiOutlineMail size={50} color="white" title="My Email" />
           </Link>
         </div>
       </div>

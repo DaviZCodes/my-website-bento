@@ -32,7 +32,7 @@ const Home = () => {
                 <h3 className="text-xl font-bold mb-2">
                   Software Engineer Intern
                 </h3>
-                <h2 className="text-xl cursor-pointer text-yellow-600 font-semibold">
+                <h2 className="text-xl cursor-pointer text-[#d6a511] font-semibold">
                   Paysfer eMart
                 </h2>
                 <p>
@@ -52,7 +52,7 @@ const Home = () => {
                 <h3 className="text-xl font-bold mb-2">
                   Computer Science Tutor
                 </h3>
-                <h2 className="text-xl cursor-pointer text-purple-800 font-semibold">
+                <h2 className="text-xl cursor-pointer text-[#4d1782] font-semibold">
                   Polytechnic Tutoring Center
                 </h2>
                 <p>
@@ -72,7 +72,7 @@ const Home = () => {
                 <h3 className="text-xl font-bold mb-2">
                   Software Engineer Intern
                 </h3>
-                <h2 className="text-xl cursor-pointe text-purple-500 font-semibold">
+                <h2 className="text-xl cursor-pointe text-[#5c25f5] font-semibold">
                   TutorMundi
                 </h2>
                 <p>
