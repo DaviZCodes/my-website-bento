@@ -219,7 +219,7 @@ const Home = () => {
             </Link>
 
             <Link
-              href="https://github.com/DaviZCodes/pet-peeves-blog"
+              href="https://github-licenses-ranked.vercel.app"
               target="_blank"
             >
               <div
