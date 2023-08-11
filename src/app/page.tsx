@@ -23,7 +23,7 @@ const Home = () => {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-[#d6a511] p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
+            <div className="bg-[#f3c844] p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
               <Link
                 href="https://www.paysfer.com"
                 target="_blank"
