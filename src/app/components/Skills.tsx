@@ -16,7 +16,7 @@ export default function Skills() {
           </li>
           <li>
             Video Editing (Final Cut Pro, Sony Vegas Pro, Davinci Resolve),
-            Adobe Photoshop, Figma
+            UI/UX, Adobe Photoshop, Figma
           </li>
           <li>Google Suite, Microsoft Office, macOS, Windows, Linux</li>
         </ul>
@@ -30,7 +30,7 @@ export default function Skills() {
             I actively play sports and work out. I have played varsity
             basketball, varsity football, and badminton at a state level. Would
             you like to work out together? (My goal is to bench 225 pounds and
-            acquire a six pack)
+            get a six pack)
           </li>
         </ul>
       </div>
