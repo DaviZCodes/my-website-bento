@@ -24,7 +24,7 @@ export default function Skills() {
         <ul className="list-disc pl-3">
           <li>
             I love playing chess. I just started playing two years ago and
-            I&apos;m rated around 1800 on chess.com. Challenge me.
+            I&apos;m rated around 1800 on chess.com. Want to play?
           </li>
           <li>
             I actively play sports and work out. I have played varsity
