@@ -15,11 +15,11 @@ export default function ContactSection() {
           through any of the links below:
         </p>
         <div className="flex justify-center py-6 gap-8">
-          <Link href="https://github.com/DaviZCodes">
+          <Link href="https://github.com/DaviZCodes" target="_blank">
             <span className="sr-only">Visit my GitHub profile</span>
             <BsGithub size={50} color="white" title="My GitHub profile" />
           </Link>
-          <Link href="https://www.linkedin.com/in/davizheng/">
+          <Link href="https://www.linkedin.com/in/davizheng/" target="_blank">
             <span className="sr-only">Visit my LinkedIn profile</span>
             <BsLinkedin size={50} color="white" title="My LinkedIn profile" />
           </Link>
