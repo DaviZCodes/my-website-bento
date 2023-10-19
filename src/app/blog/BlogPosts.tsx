@@ -7,9 +7,9 @@ export default function BlogPosts() {
           Entry #2: Welcome Back
         </div>
         <div className="text-gray-700 text-lg leading-7">
-          I didn't realize my last post was made 3 days ago. I thought I posted
-          yesterday. Time passes so fast. I really enjoy just taking a moment to
-          appreciate everything.
+          I didn&apos;t realize my last post was made 3 days ago. I thought I
+          posted yesterday. Time passes so fast. I really enjoy just taking a
+          moment to appreciate everything.
         </div>
 
         <HorizontalLine />
@@ -20,7 +20,7 @@ export default function BlogPosts() {
             Entry #1: Hello World
           </div>
           <div className="text-gray-700 text-lg leading-7">
-            If you're reading this, I love you.
+            If you&apos;re reading this, I love you.
           </div>
         </div>
       </div>
