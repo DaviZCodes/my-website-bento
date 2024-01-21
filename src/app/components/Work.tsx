@@ -32,8 +32,9 @@ export default function Work() {
                 New York University
               </h2>
               <p>
-                I just began working as a teaching assistant for CS-UY 2214 -
-                Computer Architecture and Organization.
+                I am a teaching assistant for CS-UY 2214 - Computer Architecture
+                and Organization, a class on low-level programming, digital
+                logic design, and hardware design programming.
               </p>
             </Link>
           </div>
