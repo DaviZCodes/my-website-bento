@@ -14,6 +14,7 @@ export default function BlogPosts() {
           build strong relationships, improve myself, and perhaps even win the
           competitive basketball intramural.
         </div>
+        <HorizontalLine />
       </div>
 
       <div className="bg-white rounded-lg shadow-md py-6 pl-3 pr-3 text-center">
@@ -26,17 +27,16 @@ export default function BlogPosts() {
           posted yesterday. Time passes so fast. I really enjoy just taking a
           moment to appreciate everything.
         </div>
-
         <HorizontalLine />
+      </div>
 
-        <div className="bg-white rounded-lg shadow-md py-6 pl-3 pr-3 text-center">
-          <div className="text-gray-600 text-sm">Oct 16, 2023</div>
-          <div className="text-3xl font-bold text-gray-800 my-6">
-            Entry #1: Hello World
-          </div>
-          <div className="text-gray-700 text-lg leading-7">
-            If you&apos;re reading this, I love you.
-          </div>
+      <div className="bg-white rounded-lg shadow-md py-6 pl-3 pr-3 text-center">
+        <div className="text-gray-600 text-sm">Oct 16, 2023</div>
+        <div className="text-3xl font-bold text-gray-800 my-6">
+          Entry #1: Hello World
+        </div>
+        <div className="text-gray-700 text-lg leading-7">
+          If you&apos;re reading this, I love you.
         </div>
       </div>
     </div>
