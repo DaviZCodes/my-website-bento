@@ -24,6 +24,7 @@ export default function Skills() {
             UI/UX, Adobe Photoshop, Figma
           </li>
           <li>Google Suite, Microsoft Office, macOS, Windows, Linux</li>
+          <li>Quadrilingual: English, Mandarin, Spanish, and Portuguese</li>
         </ul>
         <h2 className="text-3xl font-bold mt-6 mb-4">Hobbies</h2>
         <div className="flex justify-center items-center">
