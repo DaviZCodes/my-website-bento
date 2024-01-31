@@ -99,9 +99,9 @@ export default function Skills() {
               </div>
               <p>
                 I have always enjoyed creating content ever since I was young. I
-                think it's a great way to view back on my memories. Recently, I
-                have been uploading at an (in)frequent rate. Soon, I will be
-                uploading a new video, so I am excited for that.
+                think it&apos;s a great way to view back on my memories.
+                Recently, I have been uploading at an (in)frequent rate. Soon, I
+                will be uploading a new video, so I am excited for that.
               </p>
             </Link>
           </div>
