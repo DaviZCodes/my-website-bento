@@ -3,6 +3,7 @@ import youtubeIcon from "./images/youtube.jpeg";
 import chessKnight from "./images/chess piece.webp";
 import basketball from "./images/basketball.png";
 import dumbbell from "./images/dumbbell.webp";
+import Link from "next/link";
 
 export default function Skills() {
   return (
@@ -81,26 +82,28 @@ export default function Skills() {
             </p>
           </div>
 
-          <div className="pl-6 pt-3">
-            <div className="flex items-center">
-              <div className="w-80 py-10">
-                <Image
-                  src={youtubeIcon}
-                  className="w-full h-full"
-                  width={0}
-                  height={0}
-                  sizes="100vm"
-                  alt="YouTube Icon"
-                  loading="lazy"
-                />
+          <div className="pl-6 pt-2">
+            <Link href="https://www.youtube.com/@davitothestars">
+              <div className="flex items-center">
+                <div className="w-80 py-10">
+                  <Image
+                    src={youtubeIcon}
+                    className="w-full h-full"
+                    width={0}
+                    height={0}
+                    sizes="100vm"
+                    alt="YouTube Icon"
+                    loading="lazy"
+                  />
+                </div>
               </div>
-            </div>
-            <p>
-              I have always enjoyed creating content ever since I was young. I
-              think it's a great way to view back on my memories. Recently, I
-              have been uploading at an (in)frequent rate. Soon, I will be
-              uploading a new video, so I am excited for that.
-            </p>
+              <p>
+                I have always enjoyed creating content ever since I was young. I
+                think it's a great way to view back on my memories. Recently, I
+                have been uploading at an (in)frequent rate. Soon, I will be
+                uploading a new video, so I am excited for that.
+              </p>
+            </Link>
           </div>
         </div>
       </div>
