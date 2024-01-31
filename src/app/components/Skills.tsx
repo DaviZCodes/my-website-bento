@@ -1,4 +1,5 @@
 import Image from "next/image";
+import youtubeIcon from "./images/youtube.jpeg";
 import chessKnight from "./images/chess piece.webp";
 import basketball from "./images/basketball.png";
 import dumbbell from "./images/dumbbell.webp";
@@ -27,6 +28,7 @@ export default function Skills() {
           <li>Quadrilingual: English, Mandarin, Spanish, and Portuguese</li>
         </ul>
         <h2 className="text-3xl font-bold mt-6 mb-4">Hobbies</h2>
+
         <div className="flex justify-center items-center">
           <div>
             <div className="w-28 lg:w-36">
@@ -46,7 +48,7 @@ export default function Skills() {
             </p>
           </div>
 
-          <div>
+          <div className="pl-6">
             <div className="flex items-center">
               <div className="w-60">
                 <Image
@@ -76,6 +78,28 @@ export default function Skills() {
               basketball, varsity football, and badminton at a state level.
               Would you like to work out together? (My goal is to bench 225
               pounds and get a six pack)
+            </p>
+          </div>
+
+          <div className="pl-6 pt-3">
+            <div className="flex items-center">
+              <div className="w-80 py-10">
+                <Image
+                  src={youtubeIcon}
+                  className="w-full h-full"
+                  width={0}
+                  height={0}
+                  sizes="100vm"
+                  alt="YouTube Icon"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <p>
+              I have always enjoyed creating content ever since I was young. I
+              think it's a great way to view back on my memories. Recently, I
+              have been uploading at an (in)frequent rate. Soon, I will be
+              uploading a new video, so I am excited for that.
             </p>
           </div>
         </div>
