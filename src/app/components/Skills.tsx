@@ -28,27 +28,31 @@ export default function Skills() {
           <li>Google Suite, Microsoft Office, macOS, Windows, Linux</li>
           <li>Quadrilingual: English, Mandarin, Spanish, and Portuguese</li>
         </ul>
+
         <h2 className="text-3xl font-bold mt-6 mb-4">Hobbies</h2>
 
-        <div className="flex justify-center items-center">
-          <div>
-            <div className="w-28 lg:w-36">
-              <Image
-                src={chessKnight}
-                className="w-full h-full mb-2"
-                width={0}
-                height={0}
-                sizes="100vm"
-                alt="Chess Piece"
-                loading="lazy"
-              />
+        <div className="flex flex-col justify-center items-center md:flex-row">
+          {/* md:flex-row is so that hobbies is vertical on mobile view*/}
+
+          <div className="pl-6">
+            <div className="flex items-center">
+              <div className="w-28 lg:w-36">
+                <Image
+                  src={chessKnight}
+                  className="w-full h-full mb-2"
+                  width={0}
+                  height={0}
+                  sizes="100vm"
+                  alt="Chess Piece"
+                  loading="lazy"
+                />
+              </div>
             </div>
             <p>
               I love playing chess. I just started playing two years ago and
               I&apos;m rated around 1800 on chess.com. Want to play?
             </p>
           </div>
-
           <div className="pl-6">
             <div className="flex items-center">
               <div className="w-60">
@@ -81,7 +85,6 @@ export default function Skills() {
               pounds and get a six pack)
             </p>
           </div>
-
           <div className="pl-6 pt-2">
             <Link href="https://www.youtube.com/@davitothestars">
               <div className="flex items-center">
