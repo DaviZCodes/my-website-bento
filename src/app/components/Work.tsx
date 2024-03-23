@@ -41,7 +41,7 @@ export default function Work() {
                 I was a full-stack engineer, developing several responsive
                 webpages, enhancing the user authentication and payment
                 gateways, and creating APIs that fetch user data and shops. I
-                also worked with Google Cloud Platform (GC), ensuring data
+                also worked with Google Cloud Platform (GCP), ensuring data
                 integrity and functionality.
               </p>
             </Link>

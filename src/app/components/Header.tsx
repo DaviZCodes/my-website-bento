@@ -7,7 +7,7 @@ export default function Header() {
         <h1 className="text-6xl font-bold pt-5 sm:pt-0 pb-3">
           Hello, I&apos;m Davi Zheng.
         </h1>
-        <div className="text-xl">Optimist, Team Player, and AI Enthusiast</div>
+        <div className="text-xl">computer science nerd</div>
       </div>
       <NavBar />
     </header>
