@@ -2,7 +2,7 @@ import NavBar from "./NavBar";
 
 export default function Header() {
   return (
-    <header className="bg-blue-800 py-16">
+    <header className="bg-blue-800 pt-20 pb-16">
       <div className="text-white text-center py-6 p-10">
         <h1 className="text-6xl font-bold pt-5 sm:pt-0 pb-3">
           Hello, I&apos;m Davi Zheng.

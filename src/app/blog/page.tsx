@@ -5,7 +5,7 @@ import NavBar from "../components/NavBar";
 export default function Blog() {
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       <Header />
       <BlogPosts />
     </div>
