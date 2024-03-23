@@ -20,7 +20,8 @@ export default function Work() {
               <p>
                 I am a teaching assistant for CS-UY 2214 - Computer Architecture
                 and Organization, a class on low-level programming, digital
-                logic design, and hardware design programming.
+                logic design, and hardware design programming. I grade homework,
+                host office hours, and teach a weekly 2 hour recitation.
               </p>
             </Link>
           </div>
@@ -39,7 +40,9 @@ export default function Work() {
               <p>
                 I was a full-stack engineer, developing several responsive
                 webpages, enhancing the user authentication and payment
-                gateways, and creating APIs that fetch user data and shops.
+                gateways, and creating APIs that fetch user data and shops. I
+                also worked with Google Cloud Platform (GC), ensuring data
+                integrity and functionality.
               </p>
             </Link>
           </div>
