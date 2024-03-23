@@ -139,7 +139,7 @@ export default function Projects() {
               <h3 className="text-xl font-bold mb-2">GitHub Licenses Ranked</h3>
               <p>
                 Complex GitHub licenses are simplified and ranked to help
-                developers choose the proper license for their repository.
+                developers choose the right license for their repository.
               </p>
               <div className="flex justify-center gap-2 pt-2">
                 <SiTypescript size={45} color="#007acc" title="Typescript" />
