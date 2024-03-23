@@ -2,7 +2,7 @@ export default function AboutMe() {
   return (
     <section className="py-12 px-3 lg:px-5">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-4">About Me</h2>
+        <h2 className="text-3xl font-bold mb-4">A Little About Myself</h2>
 
         <p className="text-lg">
           I figured this is my personal website, so I will make it personal. If
