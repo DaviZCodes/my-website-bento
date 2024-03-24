@@ -45,7 +45,7 @@ export default function NavBar() {
       ${
         stickToTop
           ? "fixed bg-blue-800 border px-3 py-2 z-50 transition-all duration-300"
-          : "absolute w-full py-6 px-3 xl:px-12 flex justify-between items-center text-xl"
+          : "absolute w-full py-6 px-3 xl:px-12 flex justify-between items-center text-xl transition-all duration-200"
       }`}
     >
       <div>
