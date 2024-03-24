@@ -39,6 +39,13 @@ export default function NavBar() {
     }
   };
 
+  const goToSkillsSection = () => {
+    const workSection = document.getElementById("skills-section");
+    if (workSection) {
+      workSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div
       className={`top-0 w-full py-6 xl:px-28 flex justify-between items-center text-xl
@@ -74,9 +81,9 @@ export default function NavBar() {
           </Link>
         </div>
         <div className="px-6">
-          <Link href="/fun">
-            <p className="text-white">Fun</p>
-          </Link>
+          <p className="text-white cursor-pointer" onClick={goToSkillsSection}>
+            Fun
+          </p>
         </div>
       </div>
     </div>

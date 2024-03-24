@@ -25,7 +25,9 @@ const Home = () => {
       </div>
 
       {/* Skills */}
-      <Skills />
+      <div id="skills-section">
+        <Skills />
+      </div>
 
       {/* Contact */}
       <ContactSection />
