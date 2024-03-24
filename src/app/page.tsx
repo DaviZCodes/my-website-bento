@@ -15,10 +15,14 @@ const Home = () => {
       <AboutMe />
 
       {/* Work Experience */}
-      <Work />
+      <div id="work-section">
+        <Work />
+      </div>
 
       {/* Projects */}
-      <Projects />
+      <div id="projects-section">
+        <Projects />
+      </div>
 
       {/* Skills */}
       <Skills />

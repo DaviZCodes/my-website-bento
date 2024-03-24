@@ -19,11 +19,25 @@ export default function NavBar() {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener
+    // clean up the event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const goToWorkSection = () => {
+    const workSection = document.getElementById("work-section");
+    if (workSection) {
+      workSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const goToProjectsSection = () => {
+    const workSection = document.getElementById("projects-section");
+    if (workSection) {
+      workSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div
@@ -42,14 +56,17 @@ export default function NavBar() {
 
       <div className="flex">
         <div className="">
-          <Link href="/blog">
-            <p className="text-white">Work</p>
-          </Link>
+          <p className="text-white cursor-pointer" onClick={goToWorkSection}>
+            Work
+          </p>
         </div>
         <div className="px-6">
-          <Link href="/blog">
-            <p className="text-white">Projects</p>
-          </Link>
+          <p
+            className="text-white cursor-pointer"
+            onClick={goToProjectsSection}
+          >
+            Projects
+          </p>
         </div>
         <div className="">
           <Link href="/blog">
