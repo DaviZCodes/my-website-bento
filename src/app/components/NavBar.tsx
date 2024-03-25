@@ -48,7 +48,7 @@ export default function NavBar() {
 
   return (
     <div
-      className={`top-0 w-full py-6 xl:px-28 flex justify-between items-center text-xl
+      className={`top-0 w-full py-2 xl:px-28 flex justify-between items-center text-xl
       ${
         stickToTop
           ? "fixed bg-blue-800 border px-3 py-2 z-50 transition-all duration-300"
