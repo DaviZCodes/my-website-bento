@@ -89,8 +89,7 @@ export default function Work() {
   );
 }
 
-{
-  /*
+/*
 export default function Work() {
   return (
     <section className="bg-white py-12 px-2 lg:px-3">
@@ -177,4 +176,3 @@ export default function Work() {
   );
 }
 */
-}

@@ -80,11 +80,13 @@ export default function NavBar() {
             <p className="text-white">Blog</p>
           </Link>
         </div>
+        {/*
         <div className="px-6">
           <p className="text-white cursor-pointer" onClick={goToSkillsSection}>
             Fun
           </p>
         </div>
+            */}
       </div>
     </div>
   );
