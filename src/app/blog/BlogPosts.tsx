@@ -2,6 +2,23 @@ export default function BlogPosts() {
   return (
     <div>
       <div className="bg-white rounded-lg shadow-md py-6 pl-3 pr-3 text-center">
+        <div className="text-gray-600 text-sm">Mar 28, 2024</div>
+        <div className="text-3xl font-bold text-gray-800 my-6">
+          Entry #4: Blog Changes
+        </div>
+        <div className="text-gray-700 text-lg leading-7 lg:mx-10">
+          Yeah, I know. It&apos;s been a while. I was sick - had a terrible
+          weird fever dream about huge numbers. Anyways, I made some changes to
+          the website. I think it looks better now. I still need to add more
+          stuff lol like not hardcode each blog post. But I think that the
+          recent changes enhance my website. Anyways, I should add some tags
+          too, maybe some fun or cs related or school related tags? This post
+          right now should be tagged as fun. Anyways, goodnight.
+        </div>
+        <HorizontalLine />
+      </div>
+
+      <div className="bg-white rounded-lg shadow-md py-6 pl-3 pr-3 text-center">
         <div className="text-gray-600 text-sm">Jan 20, 2024</div>
         <div className="text-3xl font-bold text-gray-800 my-6">
           Entry #3: Last day of winter break

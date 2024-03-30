@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Skills() {
   return (
-    <section className="bg-white py-12 px-2 lg:px-3">
+    <section className="bg-white py-6 px-2 lg:px-3">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-4">Skills and frameworks</h2>
         <ul className="list-disc pl-3">

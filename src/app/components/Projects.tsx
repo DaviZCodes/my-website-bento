@@ -7,9 +7,9 @@ import { TbBrandNextjs } from "react-icons/tb";
 
 export default function Projects() {
   return (
-    <section className="py-12 px-2 lg:px-3">
+    <section className="bg-slate-300 py-6 px-2 lg:px-3">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-4">Projects</h2>
+        <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Link href="https://arter-generative-ai.vercel.app" target="_blank">
             <div
@@ -139,7 +139,7 @@ export default function Projects() {
               <h3 className="text-xl font-bold mb-2">GitHub Licenses Ranked</h3>
               <p>
                 Complex GitHub licenses are simplified and ranked to help
-                developers choose the proper license for their repository.
+                developers choose the right license for their repository.
               </p>
               <div className="flex justify-center gap-2 pt-2">
                 <SiTypescript size={45} color="#007acc" title="Typescript" />
