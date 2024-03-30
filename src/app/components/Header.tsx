@@ -14,7 +14,7 @@ export default function Header() {
           I&apos;m Davi.
         </h1>
         <div className="text-xl">
-          Full-Stack Developer && Computer Science Nerd @ NYU
+          Full-Stack Engineer && Computer Science Nerd @ NYU
         </div>
         <div className="text-xl">
           Optimist || Team Player || Tech Enthusiast
