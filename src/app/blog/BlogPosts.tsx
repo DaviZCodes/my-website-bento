@@ -7,13 +7,13 @@ export default function BlogPosts() {
           Entry #4: Blog Changes
         </div>
         <div className="text-gray-700 text-lg leading-7 lg:mx-10">
-          Yeah, I know. It's been a while. I was sick - had a terrible weird
-          fever dream about huge numbers. Anyways, I made some changes to the
-          website. I think it looks better now. I still need to add more stuff
-          lol like not hardcode each blog post. But I think that the recent
-          changes enhance my website. Anyways, I should add some tags too, maybe
-          some fun or cs related or school related tags? This post right now
-          should be tagged as fun. Anyways, goodnight.
+          Yeah, I know. It&apos;s been a while. I was sick - had a terrible
+          weird fever dream about huge numbers. Anyways, I made some changes to
+          the website. I think it looks better now. I still need to add more
+          stuff lol like not hardcode each blog post. But I think that the
+          recent changes enhance my website. Anyways, I should add some tags
+          too, maybe some fun or cs related or school related tags? This post
+          right now should be tagged as fun. Anyways, goodnight.
         </div>
         <HorizontalLine />
       </div>

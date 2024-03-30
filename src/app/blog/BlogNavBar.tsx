@@ -10,7 +10,7 @@ export default function BlogNavBar() {
           </Link>
         </div>
         <div className="text-white py-6 text-xl lg:text-2xl">
-          Davi's amazing blog.
+          Davi&apos;s amazing blog.
         </div>
       </div>
     </div>

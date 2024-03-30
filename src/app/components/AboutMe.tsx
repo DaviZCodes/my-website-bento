@@ -16,12 +16,12 @@ export default function AboutMe() {
           >
             LinkedIn
           </Link>{" "}
-          instead. This might seem false but I actually enjoy writing code. I've
-          been coding since middle school back in Brazil. I love showing my
-          family and friends my applications. I think that&apos;s the best thing
-          about studying CS. Also, working in teams is fun. Being humble and
-          striving to improve my skills is fun. Python and JavaScript are
-          awesome languages. Data Structures and Algorithms is not fun. But
+          instead. This might seem false but I actually enjoy writing code.
+          I&apos;ve been coding since middle school back in Brazil. I love
+          showing my family and friends my applications. I think that&apos;s the
+          best thing about studying CS. Also, working in teams is fun. Being
+          humble and striving to improve my skills is fun. Python and JavaScript
+          are awesome languages. Data Structures and Algorithms is not fun. But
           I&apos;m still reading Cracking the Coding Interview because I have
           to. Hopefully, one day it works out.
           {/*Hello, I&apos;m Davi, a multifaceted full-stack engineer passionate
