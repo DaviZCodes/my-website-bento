@@ -10,7 +10,6 @@ export default function NavBar() {
     // see if scrolled enough for NavBar to stick
     const handleScroll = () => {
       if (window.scrollY > 26) {
-        console.log("scroll above");
         setStickToTop(true);
       } else {
         setStickToTop(false);
@@ -28,14 +27,29 @@ export default function NavBar() {
   const goToWorkSection = () => {
     const workSection = document.getElementById("work-section");
     if (workSection) {
-      workSection.scrollIntoView({ behavior: "smooth" });
+      // we need this because it does not fit to view
+      const navbarHeight = stickToTop ? 64 : 108;
+      const additionalOffset = 20; // this value for how much it moves
+      const offsetTop = workSection.offsetTop - navbarHeight - additionalOffset;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
     }
   };
 
   const goToProjectsSection = () => {
-    const workSection = document.getElementById("projects-section");
-    if (workSection) {
-      workSection.scrollIntoView({ behavior: "smooth" });
+    const projectsSection = document.getElementById("projects-section");
+    if (projectsSection) {
+      // we need this because it does not fit to view
+      const navbarHeight = stickToTop ? 64 : 108; // Adjust this value according to your actual navbar height
+      const additionalOffset = 20; // this value for how much it moves
+      const offsetTop =
+        projectsSection.offsetTop - navbarHeight - additionalOffset;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
     }
   };
 
