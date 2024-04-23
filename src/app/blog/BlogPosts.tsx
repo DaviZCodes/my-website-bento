@@ -2,6 +2,21 @@ export default function BlogPosts() {
   return (
     <div>
       <div className="bg-white rounded-lg shadow-md py-6 pl-3 pr-3 text-center">
+        <div className="text-gray-600 text-sm">Apr 22, 2024</div>
+        <div className="text-3xl font-bold text-gray-800 my-6">
+          Entry #5: Life Changes
+        </div>
+        <div className="text-gray-700 text-lg leading-7 lg:mx-10">
+          There is a saying that when one door closes, another one opens. But
+          why can&apos;t I leave both doors open? Why can&apos;t I have both? I
+          dislike that so many things are out of our control, but that&apos;s
+          just the way it is. Anyways, it seems like my website changes have
+          been reflected positively. People have complimented my UI.
+        </div>
+        <HorizontalLine />
+      </div>
+
+      <div className="bg-white rounded-lg shadow-md py-6 pl-3 pr-3 text-center">
         <div className="text-gray-600 text-sm">Mar 28, 2024</div>
         <div className="text-3xl font-bold text-gray-800 my-6">
           Entry #4: Blog Changes
