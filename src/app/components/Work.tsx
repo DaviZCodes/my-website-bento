@@ -7,12 +7,12 @@ export default function Work() {
         <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
         {/*<div className="grid grid-cols-1 gap-8">*/}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-[#4d1782] text-white  p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
-            <Link
-              href="http://bulletin.engineering.nyu.edu/preview_course_nopop.php?catoid=15&coid=36543"
-              target="_blank"
-              title="Click for more"
-            >
+          <Link
+            href="http://bulletin.engineering.nyu.edu/preview_course_nopop.php?catoid=15&coid=36543"
+            target="_blank"
+            title="Click for more"
+          >
+            <div className="bg-[#4d1782] text-white  p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
               <h3 className="text-xl font-bold mb-2">Teaching Assistant</h3>
               <h2 className="text-xl cursor-pointer font-semibold">
                 New York University
@@ -24,14 +24,14 @@ export default function Work() {
                 {/*I grade homework,
                 host office hours, and teach a weekly 2 hour recitation.*/}
               </p>
-            </Link>
-          </div>
-          <div className="bg-[#f3c844] p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
-            <Link
-              href="https://www.paysfer.com"
-              target="_blank"
-              title="Click for more"
-            >
+            </div>
+          </Link>
+          <Link
+            href="https://www.paysfer.com"
+            target="_blank"
+            title="Click for more"
+          >
+            <div className="bg-[#f3c844] p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
               <h3 className="text-xl font-bold mb-2">
                 Software Engineer Intern
               </h3>
@@ -46,15 +46,14 @@ export default function Work() {
                 also worked with Google Cloud Platform (GCP), ensuring data
   integrity and functionality.*/}
               </p>
-            </Link>
-          </div>
-
-          <div className="bg-[#4d1782] text-white p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
-            <Link
-              href="https://engineering.nyu.edu/academics/undergraduate/tutoring-center"
-              target="_blank"
-              title="Click for more"
-            >
+            </div>
+          </Link>
+          <Link
+            href="https://engineering.nyu.edu/academics/undergraduate/tutoring-center"
+            target="_blank"
+            title="Click for more"
+          >
+            <div className="bg-[#4d1782] text-white p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
               <h3 className="text-xl font-bold mb-2">Computer Science Tutor</h3>
               <h2 className="text-xl cursor-pointer font-semibold">
                 Polytechnic Tutoring Center
@@ -64,15 +63,14 @@ export default function Work() {
                 Structures and Algorithms, and Object-Oriented Programming
                 courses at NYU.
               </p>
-            </Link>
-          </div>
-
-          <div className="bg-[#5c25f5] text-white p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
-            <Link
-              href="https://www.tutormundi.com"
-              target="_blank"
-              title="Click for more"
-            >
+            </div>
+          </Link>
+          <Link
+            href="https://www.tutormundi.com"
+            target="_blank"
+            title="Click for more"
+          >
+            <div className="bg-[#5c25f5] text-white p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
               <h3 className="text-xl font-bold mb-2">
                 Software Engineer Intern
               </h3>
@@ -83,8 +81,8 @@ export default function Work() {
                 I was a frontend developer, identifying and resolving numerous
                 bugs, while also making improvements to the user interface.
               </p>
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
     </section>

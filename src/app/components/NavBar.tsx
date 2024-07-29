@@ -53,13 +53,6 @@ export default function NavBar() {
     }
   };
 
-  const goToSkillsSection = () => {
-    const workSection = document.getElementById("skills-section");
-    if (workSection) {
-      workSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div
       className={`top-0 w-full py-2 xl:px-28 flex justify-between items-center text-xl
@@ -71,11 +64,13 @@ export default function NavBar() {
     >
       <div>
         <Link href="/">
-          <p className="text-white font-semibold text-2xl bold">Davi Zheng</p>
+          <p className="text-white font-semibold text-xl sm:text-2xl bold">
+            Davi Zheng
+          </p>
         </Link>
       </div>
 
-      <div className="flex">
+      <div className="flex pr-2 sm:pr-0">
         <div className="">
           <p className="text-white cursor-pointer" onClick={goToWorkSection}>
             Work
