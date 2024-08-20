@@ -24,8 +24,8 @@ export default function BlogPosts() {
           <br />
           <br />I will try my best to not make this entry too long, but I grew a
           lot this summer. Not grow as in height, which I do wish happened since
-          who does not want to be a 6'10 freak athlete? But grow mentally and
-          grow in my professional career. I have met so many amazing people,
+          who does not want to be a 6&apos;10 freak athlete? But grow mentally
+          and grow in my professional career. I have met so many amazing people,
           built strong relationships, and learned so much about what I&apos;m
           studying at university. Summer ending means the semester is starting
           again. I will be a senior. I will make sure to keep improving myself
