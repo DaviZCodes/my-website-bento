@@ -51,10 +51,7 @@ export default function Projects() {
             </div>
           </Link>
 
-          <Link
-            href="https://drive.google.com/file/d/1dE2FKNiOciM-4UD2Voa2ywq771438TMr/view?usp=sharing"
-            target="_blank"
-          >
+          <Link href="https://tinyurl.com/lunarexcav" target="_blank">
             <div
               className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]"
               title="Click for more"

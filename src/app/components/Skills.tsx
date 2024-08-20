@@ -11,18 +11,17 @@ export default function Skills() {
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-4">Skills and frameworks</h2>
         <ul className="list-disc pl-3">
-          <li>C, C++, x86 Assembly</li>
+          <li>Python, JavaScript, TypeScript, C, C++, Java, x86 Assembly</li>
           <li>
-            Python, OpenCV, AprilTag, ROS, Machine Learning, Convolutional
-            Neural Networks
-          </li>
-
-          <li>
-            HTML, CSS, JavaScript, TypeScript, React, NextJS, Tailwind, SCSS,
-            NodeJS, Express, Convex.dev, Postman, SQL, MongoDB
+            OpenCV, AprilTag, Robot Operating System (ROS), Machine Learning,
+            Convolutional Neural Networks
           </li>
           <li>
-            Video Editing (Final Cut Pro, Sony Vegas Pro, Davinci Resolve),
+            HTML, CSS, React, Redux, NextJS, Tailwind, SCSS, NodeJS, Express,
+            Convex.dev, Postman, SQL, MongoDB
+          </li>
+          <li>
+            Video Editing (Final Cut Pro, Sony Vegas Pro, DaVinci Resolve),
             UI/UX, Adobe Photoshop, Figma
           </li>
           <li>Google Suite, Microsoft Office, macOS, Windows, Linux</li>
