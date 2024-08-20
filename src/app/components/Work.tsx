@@ -14,7 +14,7 @@ export default function Work() {
               </h3>
               <h2 className="text-xl cursor-pointer font-semibold">Amazon</h2>
               <p>
-                I was a full-stack developer who worked in Amazon's seller
+                I was a full-stack developer who worked in Amazon&apos;s seller
                 development organization. This has been my favorite and most
                 insightful career experience so far.
               </p>
