@@ -7,6 +7,19 @@ export default function Work() {
         <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
         {/*<div className="grid grid-cols-1 gap-8">*/}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Link href="" target="_blank" title="Click for more">
+            <div className="bg-[#232f3e] text-[#f2aa3f]  p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer">
+              <h3 className="text-xl font-bold mb-2">
+                Software Engineer Intern
+              </h3>
+              <h2 className="text-xl cursor-pointer font-semibold">Amazon</h2>
+              <p>
+                I was a full-stack developer who worked in Amazon's seller
+                development organization. This has been my favorite and most
+                insightful career experience so far.
+              </p>
+            </div>
+          </Link>
           <Link
             href="http://bulletin.engineering.nyu.edu/preview_course_nopop.php?catoid=15&coid=36543"
             target="_blank"
