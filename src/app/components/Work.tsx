@@ -61,6 +61,7 @@ interface WorkExperienceCardProps {
   textColor: string;
 }
 
+// This is the class which will display each work experience
 const WorkExperienceCard: React.FC<WorkExperienceCardProps> = ({
   href,
   title,
