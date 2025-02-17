@@ -1,36 +1,14 @@
 import React from "react";
-import ContactSection from "./components/ContactComponent";
+import "./components/css/handwave.css";
 import Header from "./components/Header";
-import Skills from "./components/Skills";
-import AboutMe from "./components/AboutMe";
-import Work from "./components/Work";
-import Projects from "./components/Projects";
+import ContactMe from "./components/ContactMe";
 
 const Home = () => {
   return (
-    <div className="min-h-screen p-1 bg-gray-100">
+    <div className="min-h-screen px-60 py-6 bg-[#f7e6bc] flex justify-center">
       <Header />
 
-      {/* About Me */}
-      <AboutMe />
-
-      {/* Work Experience */}
-      <div id="work-section">
-        <Work />
-      </div>
-
-      {/* Projects */}
-      <div id="projects-section">
-        <Projects />
-      </div>
-
-      {/* Skills */}
-      <div id="skills-section">
-        <Skills />
-      </div>
-
-      {/* Contact */}
-      <ContactSection />
+      <ContactMe />
     </div>
   );
 };
