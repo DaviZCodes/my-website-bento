@@ -23,9 +23,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div>
-          <Projects />
-        </div>
+        <Projects />
       </div>
 
       <div className="flex flex-col gap-y-3 w-[30%] max-w-sm">
