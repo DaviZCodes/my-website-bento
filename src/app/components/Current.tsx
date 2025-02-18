@@ -42,7 +42,7 @@ export default function Current() {
   }, []);
 
   return (
-    <div className="flex flex-col border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-6 bg-[#ffd79b] relative">
+    <div className="flex flex-col border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-6 bg-[#ffd79b] relative overflow-hidden">
       <div className="relative z-10 flex justify-between">
         <div>
           <div className="font-bold text-2xl">Current</div>

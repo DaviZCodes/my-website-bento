@@ -21,7 +21,7 @@ export default function ContactMe() {
               <BsGithub
                 size={50}
                 title="My GitHub profile!"
-                className="text-black group-hover:text-gray-600 transition duration-300"
+                className="text-[#f78f2e] group-hover:text-black transition duration-160"
               />
             </Link>
           </div>
@@ -31,7 +31,7 @@ export default function ContactMe() {
               <BsLinkedin
                 size={50}
                 title="My LinkedIn profile!"
-                className="text-blue-700 group-hover:text-blue-500 transition duration-300"
+                className="text-[#f78f2e] group-hover:text-blue-600 transition duration-160"
               />
             </Link>
           </div>
@@ -44,7 +44,7 @@ export default function ContactMe() {
               <BsYoutube
                 size={50}
                 title="My YouTube channel!"
-                className="text-red-600 group-hover:text-red-400 transition duration-300"
+                className="text-[#f78f2e] group-hover:text-red-600 transition duration-160"
               />
             </Link>
           </div>
@@ -54,7 +54,7 @@ export default function ContactMe() {
               <AiOutlineMail
                 size={50}
                 title="Send me an email!"
-                className="text-gray-700 group-hover:text-gray-500 transition duration-300"
+                className="text-[#f78f2e] group-hover:text-gray-600 transition duration-160"
               />
             </Link>
           </div>

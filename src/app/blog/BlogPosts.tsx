@@ -2,6 +2,22 @@ export default function BlogPosts() {
   return (
     <div className="flex flex-col">
       <div className="bg-white py-6 pl-6 pr-6">
+        <div className="text-gray-600 text-sm text-center">
+          February 18, 2025
+        </div>
+        <div className="text-3xl font-bold text-gray-800 my-6 text-center">
+          Entry #7: Last semester
+        </div>
+        <div className="text-gray-700 text-lg leading-7 lg:mx-10">
+          It&apos;s my last semester of university. I have been enjoying my
+          time. I have some ideas planned, and I will make sure they turn into
+          reality. I will be releasing the new version of my personal website
+          soon.
+        </div>
+        <HorizontalLine />
+      </div>
+
+      <div className="bg-white py-6 pl-6 pr-6">
         <div className="text-gray-600 text-sm text-center">Aug 20, 2024</div>
         <div className="text-3xl font-bold text-gray-800 my-6 text-center">
           Entry #6: End of Summer

@@ -2,61 +2,75 @@ import Image from "next/image";
 import Link from "next/link";
 import { HiExternalLink } from "react-icons/hi";
 import ArterLogo from "./images/arter_logo.png";
+import NYURDTLogo from "./images/nyu_rdt.png";
+import GitHubLicensesRankedLogo from "./images/licenses_logo.png";
 
 export default function Projects() {
   return (
-    <section className="">
-      <div className="flex flex-col border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-6 bg-[#f5e2b6]">
+    <section className="flex-1">
+      <div className="flex flex-col h-full border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-6 bg-[#f5e2b6]">
         <div className="flex justify-between">
-          <div className="font-bold text-2xl">Projects</div>
+          <div className="font-bold text-2xl">Featured Projects</div>
 
           <button>
             <HiExternalLink size={26} className="" />
           </button>
         </div>
 
-        <div className="flex justify-between text-xl mt-3 gap-2">
-          <Link href="https://arter-generative-ai.vercel.app">
-            <div>Arter</div>
-            <div className="w-96">
+        <div className="flex justify-between font-semibold text-xl mt-3 gap-2">
+          <Link
+            href="https://arter-generative-ai.vercel.app"
+            target="_blank"
+            className="flex flex-col items-center w-1/3"
+          >
+            <div className="mb-2">Arter</div>
+            <div className="w-full h-72 p-3 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]">
               <Image
                 src={ArterLogo}
                 width={0}
                 height={0}
                 sizes="100vw"
-                className="w-full h-full"
-                title="Arter generative AI."
+                className="w-auto h-full object-contain"
+                title="Arter generative AI"
                 alt="Arter generative AI"
               />
             </div>
           </Link>
 
-          <Link href="https://arter-generative-ai.vercel.app">
-            <div>Lunar excavator</div>
-            <div className="w-96">
+          <Link
+            href="https://tinyurl.com/lunarexcav"
+            target="_blank"
+            className="flex flex-col items-center w-1/3"
+          >
+            <div className="mb-2">Lunar Excavator</div>
+            <div className="w-full h-72 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]">
               <Image
-                src="https://i.imgur.com/l3q4T89.png"
+                src={NYURDTLogo}
                 width={0}
                 height={0}
                 sizes="100vw"
-                className="w-full h-full"
-                title="Arter generative AI."
-                alt="Arter generative AI"
+                className="w-auto h-full object-contain"
+                title="Lunar Excavator"
+                alt="Lunar Excavator"
               />
             </div>
           </Link>
 
-          <Link href="https://arter-generative-ai.vercel.app">
-            <div>GitHub Licenses Ranked</div>
-            <div className="w-96">
+          <Link
+            href="https://github-licenses-ranked.vercel.app"
+            target="_blank"
+            className="flex flex-col items-center w-1/3"
+          >
+            <div className="mb-2">GitHub Licenses Ranked</div>
+            <div className="w-full h-72 p-3 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]">
               <Image
-                src="https://i.imgur.com/l3q4T89.png"
+                src={GitHubLicensesRankedLogo}
                 width={0}
                 height={0}
                 sizes="100vw"
-                className="w-full h-full"
-                title="Arter generative AI."
-                alt="Arter generative AI"
+                className="w-auto h-full object-contain"
+                title="GitHub Licenses Ranked"
+                alt="GitHub Licenses Ranked"
               />
             </div>
           </Link>

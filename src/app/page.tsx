@@ -5,6 +5,9 @@ import Polyglot from "./components/Polyglot";
 import Technologies from "./components/Technologies";
 import LightDarkMode from "./components/LightDarkMode";
 import Current from "./components/Current";
+import Experience from "./components/Experience";
+import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 
 const Home = () => {
   return (
@@ -29,6 +32,9 @@ const Home = () => {
       <div className="flex flex-col gap-y-3 w-[30%] max-w-sm">
         <ContactMe />
         <Current />
+        <Experience />
+        <Blog />
+        <Footer />
       </div>
     </div>
   );

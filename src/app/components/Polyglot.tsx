@@ -5,25 +5,25 @@ export default function Polyglot() {
         <div className="text-xl font-semibold">Languages I speak:</div>
         <button
           title="English"
-          className="px-5 py-3 rounded-lg bg-gray-200 cursor-pointer transition-all duration-160 bg-[#fdaf67e3] hover:bg-white hover:text-[#0A3161] hover:scale-105 shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]"
+          className="px-5 py-3 rounded-lg bg-[#fdaf67e3] cursor-pointer transition-all duration-160 hover:bg-white hover:text-[#0A3161] shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]"
         >
           us-en
         </button>
         <button
           title="Spanish"
-          className="px-5 py-3 rounded-lg bg-gray-200  cursor-pointer transition-all duration-160 bg-[#fdaf67e3] hover:bg-[#F1BF00] hover:text-[#AA151B] hover:scale-105 shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]"
+          className="px-5 py-3 rounded-lg bg-[#fdaf67e3]  cursor-pointer transition-all duration-160 hover:bg-[#F1BF00] hover:text-[#AA151B] shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]"
         >
           es-br
         </button>
         <button
           title="Mandarin"
-          className="px-5 py-3 rounded-lg bg-gray-200 cursor-pointer transition-all duration-160 bg-[#fdaf67e3] hover:bg-[#EE1C25] hover:text-[#FFFF00] hover:scale-105 shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]"
+          className="px-5 py-3 rounded-lg bg-[#fdaf67e3] cursor-pointer transition-all duration-160 hover:bg-[#EE1C25] hover:text-[#FFFF00] shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]"
         >
           zh-cn
         </button>
         <button
           title="Portuguese"
-          className="px-5 py-3 rounded-lg bg-gray-200 cursor-pointer transition-all duration-160 bg-[#fdaf67e3] hover:bg-[#009739] hover:text-[#FEDD00] hover:scale-105 shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]   "
+          className="px-5 py-3 rounded-lg bg-[#fdaf67e3] cursor-pointer transition-all duration-160 hover:bg-[#009739] hover:text-[#FEDD00] shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]   "
         >
           pt-br
         </button>
