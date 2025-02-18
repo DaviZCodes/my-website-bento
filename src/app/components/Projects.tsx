@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { HiExternalLink } from "react-icons/hi";
+import ArterLogo from "./images/arter_logo.png";
 
 export default function Projects() {
   return (
@@ -19,7 +20,7 @@ export default function Projects() {
             <div>Arter</div>
             <div className="w-96">
               <Image
-                src="https://i.imgur.com/l3q4T89.png"
+                src={ArterLogo}
                 width={0}
                 height={0}
                 sizes="100vw"
