@@ -1,7 +1,7 @@
 export default function BlogPosts() {
   return (
-    <div>
-      <div className="bg-white rounded-lg shadow-md py-6 pl-6 pr-6">
+    <div className="flex flex-col">
+      <div className="bg-white py-6 pl-6 pr-6">
         <div className="text-gray-600 text-sm text-center">Aug 20, 2024</div>
         <div className="text-3xl font-bold text-gray-800 my-6 text-center">
           Entry #6: End of Summer
@@ -34,7 +34,7 @@ export default function BlogPosts() {
         <HorizontalLine />
       </div>
 
-      <div className="bg-white rounded-lg shadow-md py-6 pl-6 pr-6">
+      <div className="bg-white py-6 pl-6 pr-6">
         <div className="text-gray-600 text-sm text-center">Apr 22, 2024</div>
         <div className="text-3xl font-bold text-gray-800 my-6 text-center">
           Entry #5: Life Changes
@@ -49,7 +49,7 @@ export default function BlogPosts() {
         <HorizontalLine />
       </div>
 
-      <div className="bg-white rounded-lg shadow-md py-6 pl-6 pr-6">
+      <div className="bg-white py-6 pl-6 pr-6">
         <div className="text-gray-600 text-sm text-center">Mar 28, 2024</div>
         <div className="text-3xl font-bold text-gray-800 my-6 text-center">
           Entry #4: Blog Changes
@@ -67,7 +67,7 @@ export default function BlogPosts() {
         <HorizontalLine />
       </div>
 
-      <div className="bg-white rounded-lg shadow-md py-6 pl-6 pr-6">
+      <div className="bg-white py-6 pl-6 pr-6">
         <div className="text-gray-600 text-sm text-center">Jan 20, 2024</div>
         <div className="text-3xl font-bold text-gray-800 my-6 text-center">
           Entry #3: Last day of winter break
@@ -83,7 +83,7 @@ export default function BlogPosts() {
         <HorizontalLine />
       </div>
 
-      <div className="bg-white rounded-lg shadow-md py-6 pl-6 pr-6">
+      <div className="bg-white py-6 pl-6 pr-6">
         <div className="text-gray-600 text-sm text-center">Oct 19, 2023</div>
         <div className="text-3xl font-bold text-gray-800 my-6 text-center">
           Entry #2: Welcome Back
@@ -96,7 +96,7 @@ export default function BlogPosts() {
         <HorizontalLine />
       </div>
 
-      <div className="bg-white rounded-lg shadow-md py-6 pl-6 pr-6">
+      <div className="bg-white py-6 pl-6 pr-6">
         <div className="text-gray-600 text-sm text-center">Oct 16, 2023</div>
         <div className="text-3xl font-bold text-gray-800 my-6 text-center">
           Entry #1: Hello World

@@ -14,32 +14,48 @@ export default function ContactMe() {
 
         <div className="mt-3">Email: daviz.contactme@gmail.com</div>
 
-        <div className="flex justify-center py-6 mt-3 gap-3">
-          <div>
+        <div className="flex justify-center mt-6 gap-3">
+          <div className="group">
             <Link href="https://github.com/DaviZCodes" target="_blank">
               <span className="sr-only">Visit my GitHub profile!</span>
-              <BsGithub size={50} title="My GitHub profile!" />
+              <BsGithub
+                size={50}
+                title="My GitHub profile!"
+                className="text-black group-hover:text-gray-600 transition duration-300"
+              />
             </Link>
           </div>
-          <div>
+          <div className="group">
             <Link href="https://www.linkedin.com/in/davizheng/" target="_blank">
               <span className="sr-only">Visit my LinkedIn profile!</span>
-              <BsLinkedin size={50} title="My LinkedIn profile!" />
+              <BsLinkedin
+                size={50}
+                title="My LinkedIn profile!"
+                className="text-blue-700 group-hover:text-blue-500 transition duration-300"
+              />
             </Link>
           </div>
-          <div>
+          <div className="group">
             <Link
               href="https://www.youtube.com/@davitothestars"
               target="_blank"
             >
-              <span className="sr-only">Check out my YouTube channel! </span>
-              <BsYoutube size={50} title="My YouTube channel!" />
+              <span className="sr-only">Check out my YouTube channel!</span>
+              <BsYoutube
+                size={50}
+                title="My YouTube channel!"
+                className="text-red-600 group-hover:text-red-400 transition duration-300"
+              />
             </Link>
           </div>
-          <div>
+          <div className="group">
             <Link href="mailto:daviz.contactme@gmail.com">
               <span className="sr-only">Send me an email!</span>
-              <AiOutlineMail size={50} title="Send me an email!" />
+              <AiOutlineMail
+                size={50}
+                title="Send me an email!"
+                className="text-gray-700 group-hover:text-gray-500 transition duration-300"
+              />
             </Link>
           </div>
         </div>

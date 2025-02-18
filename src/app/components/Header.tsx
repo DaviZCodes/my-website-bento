@@ -1,8 +1,6 @@
 import Image from "next/image";
 import "./css/handwave.css";
 import WoodenKnight from "../components/images/wooden_chess_knight.png";
-import Polyglot from "./Polyglot";
-import LightDarkMode from "./LightDarkMode";
 
 export default function Header() {
   return (
@@ -41,15 +39,10 @@ export default function Header() {
             willing to learn new tools and technologies most suitable for the
             job.
           </div>
-
-          <div className="flex gap-6 mt-auto">
-            <Polyglot />
-            <LightDarkMode />
-          </div>
         </div>
 
         {/* Knight */}
-        <div className="w-52 h-auto flex-shrink-0">
+        <div className="w-auto h-80 flex-shrink-0">
           <Image
             src={WoodenKnight}
             width={0}

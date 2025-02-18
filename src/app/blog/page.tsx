@@ -1,10 +1,12 @@
+import Link from "next/link";
 import BlogPosts from "./BlogPosts";
-import BlogNavBar from "./BlogNavBar";
 
 export default function Blog() {
   return (
-    <div>
-      <BlogNavBar />
+    <div className="min-h-screen px-60 py-6 bg-[#f7e6bc] flex flex-col">
+      <Link href="/" className="text-center">
+        Home
+      </Link>
       <BlogPosts />
     </div>
   );
