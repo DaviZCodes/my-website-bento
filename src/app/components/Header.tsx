@@ -5,9 +5,11 @@ import "./css/handwave.css";
 import WoodenKnight from "../components/images/wooden_chess_knight.png";
 import GoldenKing from "../components/images/golden_king_chess.png";
 import { useTheme } from "./ThemeContext";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
   const { theme } = useTheme();
+  const { t } = useTranslation();
 
   return (
     <section>
@@ -22,7 +24,7 @@ export default function Header() {
               👋
             </span>
 
-            <div className="ml-1 font-semibold">I&apos;m Davi.</div>
+            <div className="ml-1 font-semibold">{t("Greeting")}</div>
           </div>
 
           <div className="text-gray-700 mt-1 mb-6 text-lg dark:text-white">
