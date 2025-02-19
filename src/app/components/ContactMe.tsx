@@ -22,20 +22,20 @@ export default function ContactMe() {
         <div className="flex justify-center mt-6 gap-3">
           <div className="group">
             <Link href="https://github.com/DaviZCodes" target="_blank">
-              <span className="sr-only">Visit my GitHub profile!</span>
+              <span className="sr-only">{t("GitHub")}</span>
               <BsGithub
                 size={50}
-                title="My GitHub profile!"
+                title={t("GitHub")}
                 className="text-[#f78f2e] group-hover:text-[#2b3137] transition duration-160 dark:text-white"
               />
             </Link>
           </div>
           <div className="group">
             <Link href="https://www.linkedin.com/in/davizheng/" target="_blank">
-              <span className="sr-only">Visit my LinkedIn profile!</span>
+              <span className="sr-only">{t("LinkedIn")}</span>
               <BsLinkedin
                 size={50}
-                title="My LinkedIn profile!"
+                title={t("LinkedIn")}
                 className="text-[#f78f2e] group-hover:text-[#0072b1] transition duration-160 dark:text-white"
               />
             </Link>
@@ -45,20 +45,20 @@ export default function ContactMe() {
               href="https://www.youtube.com/@davitothestars"
               target="_blank"
             >
-              <span className="sr-only">Check out my YouTube channel!</span>
+              <span className="sr-only">{t("YouTube")}</span>
               <BsYoutube
                 size={50}
-                title="My YouTube channel!"
+                title={t("YouTube")}
                 className="text-[#f78f2e] group-hover:text-[#CD201F] transition duration-160 dark:text-white"
               />
             </Link>
           </div>
           <div className="group">
             <Link href="mailto:daviz.contactme@gmail.com">
-              <span className="sr-only">Send me an email!</span>
+              <span className="sr-only">{t("ContactMe")}</span>
               <AiOutlineMail
                 size={50}
-                title="Send me an email!"
+                title={t("ContactMe")}
                 className="text-[#f78f2e] group-hover:text-gray-600 transition duration-160 dark:text-white"
               />
             </Link>
