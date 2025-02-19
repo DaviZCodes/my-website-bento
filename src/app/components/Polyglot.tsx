@@ -3,12 +3,10 @@
 import { useTranslation } from "react-i18next";
 
 export default function Polyglot() {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   const switchLanguage = (language: string | undefined) => {
     i18n.changeLanguage(language);
-
-    console.log("Switching language to:", language);
   };
 
   return (
@@ -17,7 +15,7 @@ export default function Polyglot() {
     dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60]"
     >
       <div className="flex items-center gap-3">
-        <div className="text-xl font-semibold">Languages I speak:</div>
+        <div className="text-xl font-semibold">{t("Languages")}</div>
         <button
           title="English"
           onClick={() => switchLanguage("us-en")}

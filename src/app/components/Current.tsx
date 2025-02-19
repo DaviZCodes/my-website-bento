@@ -4,8 +4,11 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Image from "next/image";
 import AmazonLogo from "./images/amazon_logo.png";
+import { useTranslation } from "react-i18next";
 
 export default function Current() {
+  const { t } = useTranslation();
+
   const [currTime, setCurrTime] = useState<string | null>(null);
 
   // Function to fetch current time from API
@@ -43,20 +46,18 @@ export default function Current() {
   return (
     <div
       className="flex flex-col border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-6 bg-[#ffd79b] relative overflow-hidden
-    dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60]"
+    dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60] dark:hover:bg-[#e0ee60] dark:hover:text-[#112336]"
     >
       <div className="relative z-10 flex justify-between">
         <div>
-          <div className="font-bold text-2xl">Current</div>
-          <div className="font-light">What I&apos;m doing now</div>
+          <div className="font-bold text-2xl">{t("Current")}</div>
+          <div className="font-light">{t("CurrentSubtitle")}</div>
         </div>
         <div className="text-lg font-mono">{currTime}</div>
       </div>
 
-      <div className="relative z-10 text-xl my-10">
-        Software Engineering at Amazon
-      </div>
-      <div className="font-light text-xl">NYC</div>
+      <div className="relative z-10 text-xl my-10">{t("CurrentRole")}</div>
+      <div className="font-light text-xl">{t("NewYork")}</div>
 
       <div
         className="absolute bottom-0 right-0 opacity-30 z-0"

@@ -1,12 +1,9 @@
-"use client";
-
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "./components/ThemeContext";
-import { I18nextProvider } from "react-i18next";
-import i18n from "./components/i18n/i18n";
+import I18nProvider from "./components/i18n/I18NProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,9 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <I18nextProvider i18n={i18n}>
+        <I18nProvider>
           <ThemeProvider>{children}</ThemeProvider>
-        </I18nextProvider>
+        </I18nProvider>
         <Analytics />
       </body>
     </html>

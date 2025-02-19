@@ -28,27 +28,14 @@ export default function Header() {
           </div>
 
           <div className="text-gray-700 mt-1 mb-6 text-lg dark:text-white">
-            Software Engineer @ Amazon || Computer Science && Math @ NYU ||
-            Polyglot
+            {t("Introduction")}
           </div>
 
-          <div className="text-lg">
-            Hey, I&apos;m Davi Zheng, a full-stack software engineer based in
-            New York City.
-          </div>
+          <div className="text-lg">{t("Introduction-2")}</div>
 
-          <div className="text-lg mt-3">
-            I&apos;m currently a senior studying Computer Science and Math at
-            New York University graduating in May 2025.
-          </div>
+          <div className="text-lg mt-3">{t("Introduction-3")}</div>
 
-          <div className="text-lg mt-3">
-            I am highly interested in all things technology and business
-            related. Beyond coding, I work out, play chess, and make videos.
-            I&apos;m open to trying new activities the same way that I&apos;m
-            willing to learn new tools and technologies most suitable for the
-            job.
-          </div>
+          <div className="text-lg mt-3">{t("AboutMe")}</div>
         </div>
 
         {/* Knight or King */}
@@ -61,7 +48,7 @@ export default function Header() {
               height={0}
               sizes="100vw"
               className="w-full h-full"
-              title="Play me in chess! I am decent."
+              title={t("Chess")}
               alt="Wooden Knight"
             />
           </div>
@@ -73,7 +60,7 @@ export default function Header() {
               height={0}
               sizes="100vw"
               className="w-full h-full"
-              title="Play me in chess! I am decent."
+              title={t("Chess")}
               alt="Wooden Knight"
             />
           </div>

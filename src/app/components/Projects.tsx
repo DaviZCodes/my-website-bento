@@ -1,11 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { HiExternalLink } from "react-icons/hi";
 import ArterLogo from "./images/arter_logo.png";
 import NYURDTLogo from "./images/nyu_rdt.png";
 import GitHubLicensesRankedLogo from "./images/licenses_logo.png";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
+  const { t } = useTranslation();
+
   return (
     <section className="flex-1">
       <div
@@ -13,7 +18,7 @@ export default function Projects() {
       dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60]"
       >
         <div className="flex justify-between">
-          <div className="font-bold text-2xl">Featured Projects</div>
+          <div className="font-bold text-2xl">{t("FeaturedProjects")}</div>
 
           <Link href="/projects" title="More projects">
             <button>

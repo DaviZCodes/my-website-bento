@@ -1,10 +1,13 @@
 import React, { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 interface TechnologiesModalProps {
   onClose: () => void; // Prop for closing the modal
 }
 
 const TechnologiesModal: React.FC<TechnologiesModalProps> = ({ onClose }) => {
+  const { t } = useTranslation();
+
   const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -56,7 +59,7 @@ const TechnologiesModal: React.FC<TechnologiesModalProps> = ({ onClose }) => {
           className="text-2xl font-semibold text-black mb-3
         dark:text-[#e0ee60]"
         >
-          Technologies I use:
+          {t("Technologies")}
         </div>
 
         <div
