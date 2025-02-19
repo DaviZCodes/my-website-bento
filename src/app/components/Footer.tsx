@@ -1,14 +1,25 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
+import i18n from "./i18n/i18n";
 
 export default function Footer() {
   const { t } = useTranslation();
 
+  const getTextSize = () => {
+    const currentLanguage = i18n.language;
+    return currentLanguage === "es" ||
+      currentLanguage === "es-br" ||
+      currentLanguage === "pt" ||
+      currentLanguage === "pt-br"
+      ? "text-md"
+      : "text-lg";
+  };
+
   return (
     <footer
-      className="bg-[#fdaf67e3] p-6 rounded-xl text-lg
-    dark:bg-[#e0ee60] dark:text-[#112336]"
+      className={`bg-[#fdaf67e3] p-6 rounded-xl ${getTextSize()}
+    dark:bg-[#e0ee60] dark:text-[#112336]`}
     >
       <div>
         &copy; {new Date().getFullYear()} {t("Footer")}

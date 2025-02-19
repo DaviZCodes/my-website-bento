@@ -6,10 +6,21 @@ import WoodenKnight from "../components/images/wooden_chess_knight.png";
 import GoldenKing from "../components/images/golden_king_chess.png";
 import { useTheme } from "./ThemeContext";
 import { useTranslation } from "react-i18next";
+import i18n from "./i18n/i18n";
 
 export default function Header() {
   const { theme } = useTheme();
   const { t } = useTranslation();
+
+  const getTextSize = () => {
+    const currentLanguage = i18n.language;
+    return currentLanguage === "es" ||
+      currentLanguage === "es-br" ||
+      currentLanguage === "pt" ||
+      currentLanguage === "pt-br"
+      ? "text-md"
+      : "text-lg";
+  };
 
   return (
     <section>
@@ -27,15 +38,17 @@ export default function Header() {
             <div className="ml-1 font-semibold">{t("Greeting")}</div>
           </div>
 
-          <div className="text-gray-700 mt-1 mb-6 text-lg dark:text-white">
+          <div
+            className={`text-gray-700 mt-1 mb-6 ${getTextSize()} dark:text-white`}
+          >
             {t("Introduction")}
           </div>
 
-          <div className="text-lg">{t("Introduction-2")}</div>
+          <div className={`${getTextSize()}`}>{t("Introduction-2")}</div>
 
-          <div className="text-lg mt-3">{t("Introduction-3")}</div>
+          <div className={`${getTextSize()}`}>{t("Introduction-3")}</div>
 
-          <div className="text-lg mt-3">{t("AboutMe")}</div>
+          <div className={`${getTextSize()}`}>{t("AboutMe")}</div>
         </div>
 
         {/* Knight or King */}

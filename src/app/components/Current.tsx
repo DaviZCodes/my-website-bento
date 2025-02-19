@@ -5,9 +5,21 @@ import axios from "axios";
 import Image from "next/image";
 import AmazonLogo from "./images/amazon_logo.png";
 import { useTranslation } from "react-i18next";
+import i18n from "./i18n/i18n";
 
 export default function Current() {
   const { t } = useTranslation();
+
+  const getTextSize = () => {
+    const currentLanguage = i18n.language;
+    console.log(currentLanguage);
+    return currentLanguage === "es" ||
+      currentLanguage === "es-br" ||
+      currentLanguage === "pt" ||
+      currentLanguage === "pt-br"
+      ? "text-sm"
+      : "text-md";
+  };
 
   const [currTime, setCurrTime] = useState<string | null>(null);
 
@@ -51,7 +63,9 @@ export default function Current() {
       <div className="relative z-10 flex justify-between">
         <div>
           <div className="font-bold text-2xl">{t("Current")}</div>
-          <div className="font-light">{t("CurrentSubtitle")}</div>
+          <div className={`font-light ${getTextSize()}`}>
+            {t("CurrentSubtitle")}
+          </div>
         </div>
         <div className="text-lg font-mono">{currTime}</div>
       </div>

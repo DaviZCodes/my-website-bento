@@ -6,6 +6,7 @@ import { SiPython, SiCplusplus, SiJavascript } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import TechnologiesModal from "./TechnologiesModal";
 import { useTranslation } from "react-i18next";
+import i18n from "../i18n/i18n";
 
 export default function Technologies() {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -20,6 +21,16 @@ export default function Technologies() {
 
   const { t } = useTranslation();
 
+  const getTextSize = () => {
+    const currentLanguage = i18n.language;
+    return currentLanguage === "es" ||
+      currentLanguage === "es-br" ||
+      currentLanguage === "pt" ||
+      currentLanguage === "pt-br"
+      ? "text-sm"
+      : "text-xl";
+  };
+
   return (
     <div
       className="relative flex w-full border-2 border-yellow-50 transition duration-160 
@@ -28,7 +39,9 @@ export default function Technologies() {
      dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60] dark:hover:bg-[#e0ee60] dark:hover:text-[#112336]"
       onClick={openModal}
     >
-      <div className="flex-grow text-xl font-semibold">{t("Technologies")}</div>
+      <div className={`flex-grow ${getTextSize()} font-semibold`}>
+        {t("Technologies")}
+      </div>
       <button>
         <HiExternalLink size={26} className="hover:text-white" />
       </button>

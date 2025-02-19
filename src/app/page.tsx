@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 const Home = () => {
   return (
     <div
-      className="min-h-screen px-60 py-6 bg-[#f7e6bc] flex justify-center gap-3
+      className="h-screen px-60 py-6 bg-[#f7e6bc] flex justify-center gap-3 overflow-hidden
     dark:bg-[#0d1c2b]"
     >
       <div className="flex-grow max-w-5xl flex flex-col gap-y-3">
