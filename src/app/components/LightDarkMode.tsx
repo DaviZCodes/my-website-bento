@@ -1,22 +1,20 @@
 "use client";
 
-import { useState } from "react";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
+import { useTheme } from "./ThemeContext";
 
 export default function LightDarkMode() {
-  const [isLightMode, setIsLightMode] = useState<boolean>(true);
-
-  const toggleMode = () => {
-    setIsLightMode(!isLightMode);
-  };
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <button
-      onClick={toggleMode}
-      className="flex items-center gap-2 border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl px-5 py-3 bg-[#f5e2b6] hover:bg-[#fdaf67e3] hover:text-white shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]"
+      onClick={toggleTheme}
+      className="flex items-center gap-2 border-2 border-yellow-50 transition duration-160 
+      hover:border-[#fdaf67e3] rounded-xl px-5 py-3 bg-[#f5e2b6] hover:bg-[#fdaf67e3] hover:text-white shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
+      dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60]"
       aria-label="Toggle light/dark mode"
     >
-      {isLightMode ? (
+      {theme === "light" ? (
         <MdOutlineLightMode size={36} />
       ) : (
         <MdOutlineDarkMode size={36} />

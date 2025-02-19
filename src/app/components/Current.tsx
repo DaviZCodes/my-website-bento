@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Image from "next/image";
@@ -42,7 +41,10 @@ export default function Current() {
   }, []);
 
   return (
-    <div className="flex flex-col border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-6 bg-[#ffd79b] relative overflow-hidden">
+    <div
+      className="flex flex-col border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-6 bg-[#ffd79b] relative overflow-hidden
+    dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60]"
+    >
       <div className="relative z-10 flex justify-between">
         <div>
           <div className="font-bold text-2xl">Current</div>
@@ -54,6 +56,7 @@ export default function Current() {
       <div className="relative z-10 text-xl my-10">
         Software Engineering at Amazon
       </div>
+      <div className="font-light text-xl">NYC</div>
 
       <div
         className="absolute bottom-0 right-0 opacity-30 z-0"

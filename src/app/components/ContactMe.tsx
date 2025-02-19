@@ -5,7 +5,10 @@ import Link from "next/link";
 export default function ContactMe() {
   return (
     <section className="text-lg">
-      <div className="border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-6 bg-[#f5e2b6]">
+      <div
+        className="border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-6 bg-[#f5e2b6]
+      dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60]"
+      >
         <div className="font-bold text-2xl">Contact me!</div>
         <div className="mt-3">
           I&apos;m a strong believer that you can learn something from everyone,
@@ -21,7 +24,7 @@ export default function ContactMe() {
               <BsGithub
                 size={50}
                 title="My GitHub profile!"
-                className="text-[#f78f2e] group-hover:text-black transition duration-160"
+                className="text-[#f78f2e] group-hover:text-[#2b3137] transition duration-160 dark:text-[#e0ee60]"
               />
             </Link>
           </div>
@@ -31,7 +34,7 @@ export default function ContactMe() {
               <BsLinkedin
                 size={50}
                 title="My LinkedIn profile!"
-                className="text-[#f78f2e] group-hover:text-blue-600 transition duration-160"
+                className="text-[#f78f2e] group-hover:text-[#0072b1] transition duration-160 dark:text-[#e0ee60]"
               />
             </Link>
           </div>
@@ -44,7 +47,7 @@ export default function ContactMe() {
               <BsYoutube
                 size={50}
                 title="My YouTube channel!"
-                className="text-[#f78f2e] group-hover:text-red-600 transition duration-160"
+                className="text-[#f78f2e] group-hover:text-[#CD201F] transition duration-160 dark:text-[#e0ee60]"
               />
             </Link>
           </div>
@@ -54,7 +57,7 @@ export default function ContactMe() {
               <AiOutlineMail
                 size={50}
                 title="Send me an email!"
-                className="text-[#f78f2e] group-hover:text-gray-600 transition duration-160"
+                className="text-[#f78f2e] group-hover:text-gray-600 transition duration-160 dark:text-[#e0ee60]"
               />
             </Link>
           </div>

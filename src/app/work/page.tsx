@@ -2,10 +2,23 @@ import Link from "next/link";
 
 export default function Work() {
   return (
-    <section className="bg-slate-200 py-6 px-2 lg:px-3">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section
+      className="flex flex-col min-h-screen bg-[#f7e6bc] px-60 py-6 items-center
+    dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60]"
+    >
+      <div className="w-full flex justify-start sticky top-0 z-10">
+        <Link
+          href={"/"}
+          className="font-semibold text-xl px-3 py-2 mt-6 border-2 border-black rounded-lg hover:bg-black hover:text-white transition-all duration-160
+          dark:border-[#e0ee60]"
+        >
+          Home
+        </Link>
+      </div>
+
+      <div className="text-center mt-16">
+        <h2 className="text-5xl font-bold mb-12">Work Experience</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <WorkExperienceCard
             href="https://www.amazon.com"
             title="Software Engineer Intern"
@@ -73,12 +86,12 @@ const WorkExperienceCard: React.FC<WorkExperienceCardProps> = ({
   return (
     <Link href={href} target="_blank" title="Click for more">
       <div
-        className="p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer"
+        className="border-2 border-yellow-50 p-6 rounded-xl shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer"
         style={{ backgroundColor: bgColor, color: textColor }}
       >
         <h3 className="text-xl font-bold mb-2">{title}</h3>
         <h2 className="text-xl cursor-pointer font-semibold">{company}</h2>
-        <p>{description}</p>
+        <p className="text-left mt-2">{description}</p>
       </div>
     </Link>
   );

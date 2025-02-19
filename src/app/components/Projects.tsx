@@ -8,13 +8,18 @@ import GitHubLicensesRankedLogo from "./images/licenses_logo.png";
 export default function Projects() {
   return (
     <section className="flex-1">
-      <div className="flex flex-col h-full border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-6 bg-[#f5e2b6]">
+      <div
+        className="flex flex-col h-full border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-6 bg-[#f5e2b6]
+      dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60]"
+      >
         <div className="flex justify-between">
           <div className="font-bold text-2xl">Featured Projects</div>
 
-          <button>
-            <HiExternalLink size={26} className="" />
-          </button>
+          <Link href="/projects" title="More projects">
+            <button>
+              <HiExternalLink size={26} className="" />
+            </button>
+          </Link>
         </div>
 
         <div className="flex justify-between font-semibold text-xl mt-3 gap-2">
@@ -24,7 +29,10 @@ export default function Projects() {
             className="flex flex-col items-center w-1/3"
           >
             <div className="mb-2">Arter</div>
-            <div className="w-full h-72 p-3 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]">
+            <div
+              className="w-full h-72 p-3 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
+            dark:hover:border-[#e0ee60]"
+            >
               <Image
                 src={ArterLogo}
                 width={0}
@@ -43,7 +51,10 @@ export default function Projects() {
             className="flex flex-col items-center w-1/3"
           >
             <div className="mb-2">Lunar Excavator</div>
-            <div className="w-full h-72 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]">
+            <div
+              className="w-full h-72 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
+            dark:hover:border-[#e0ee60]"
+            >
               <Image
                 src={NYURDTLogo}
                 width={0}
@@ -62,7 +73,10 @@ export default function Projects() {
             className="flex flex-col items-center w-1/3"
           >
             <div className="mb-2">GitHub Licenses Ranked</div>
-            <div className="w-full h-72 p-3 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]">
+            <div
+              className="w-full h-72 p-3 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
+            dark:hover:border-[#e0ee60]"
+            >
               <Image
                 src={GitHubLicensesRankedLogo}
                 width={0}
