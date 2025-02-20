@@ -11,9 +11,10 @@ export default function Blog() {
       <div className="w-full flex justify-start sticky top-0 z-10">
         <Link
           href={"/"}
-          className="font-semibold text-xl px-3 py-2 mt-6 border-2 transition-all duration-160 rounded-lg text-white bg-black
+          className="font-semibold text-xl px-3 py-2 mt-3 border-2 transition-all duration-160 rounded-lg text-white bg-black
           dark:border-[#e0ee60]
-          lg:border-black lg:hover:bg-black lg:hover:text-white"
+          lg:border-black lg:hover:bg-black lg:hover:text-white
+          xl:mt-6"
         >
           Home
         </Link>
