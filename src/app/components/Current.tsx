@@ -77,7 +77,7 @@ export default function Current() {
           </div>
         </div>
         <div
-          className="font-mono text-sm
+          className="font-mono text-sm text-right
         xl:text-lg"
         >
           {currTime}

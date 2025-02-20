@@ -13,7 +13,7 @@ export default function Polyglot() {
     <div
       className="flex border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl bg-[#f5e2b6] shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
     dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60] p-3
-    lg:py-5 xl:py-1 2xl:px-6 2xl:py-2"
+    lg:py-5 xl:py-0 2xl:px-6 2xl:py-2"
     >
       {/* For screens md and larger */}
       <div className="hidden md:flex items-center gap-3">
@@ -62,7 +62,7 @@ export default function Polyglot() {
       </div>
 
       {/* For screens sm and smaller */}
-      <div className="md:hidden flex flex-col justify-center items-center gap-3">
+      <div className="md:hidden flex flex-col justify-center items-center gap-3 w-full">
         <div
           className="text-lg font-semibold whitespace-nowrap
         lg:text-lg xl:text-base 2xl:text-xl "

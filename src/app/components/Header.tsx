@@ -38,8 +38,8 @@ export default function Header() {
       currentLanguage === "es-br" ||
       currentLanguage === "pt" ||
       currentLanguage === "pt-br"
-      ? "md:text-xl xl:text-lg"
-      : "md:text-2xl xl:text-xl";
+      ? "md:text-xl xl:text-base 2xl:text-lg"
+      : "md:text-xl xl:text-lg 2xl:text-xl";
   };
 
   return (

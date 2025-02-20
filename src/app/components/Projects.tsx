@@ -28,7 +28,7 @@ export default function Projects() {
           <div className="flex justify-between">
             <div
               className="font-bold text-xl
-          xl:text-2xl 2xl:text-2xl"
+          xl:text-2xl"
             >
               {t("FeaturedProjects")}
             </div>
@@ -58,7 +58,7 @@ export default function Projects() {
               <div
                 className="w-full h-36 p-3 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
             dark:hover:border-[#e0ee60]
-            xl:h-56 2xl:h-64"
+            xl:h-52 2xl:h-64"
               >
                 <Image
                   src={ArterLogo}
@@ -86,7 +86,7 @@ export default function Projects() {
               <div
                 className="w-full h-36 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
             dark:hover:border-[#e0ee60]
-            xl:h-56 2xl:h-64"
+            xl:h-52 2xl:h-64"
               >
                 <Image
                   src={LightOrDarkNYURDTLogo}
@@ -114,7 +114,7 @@ export default function Projects() {
               <div
                 className="w-full h-36 p-3 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
             dark:hover:border-[#e0ee60]
-            xl:h-56 2xl:h-64"
+            xl:h-52 2xl:h-64"
               >
                 <Image
                   src={GitHubLicensesRankedLogo}
