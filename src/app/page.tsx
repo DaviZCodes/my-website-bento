@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 const Home = () => {
   return (
     <div
-      className="xl:h-screen bg-[#f7e6bc] flex justify-center overflow-hidden
+      className="min-h-screen bg-[#f7e6bc] flex justify-center
     dark:bg-[#0d1c2b] p-2
     lg:px-12 xl:px-32 2xl:px-60 lg:py-3 xl:py-6 2xl:py-12 lg:gap-2 2xl:gap-3"
     >
@@ -51,7 +51,7 @@ const Home = () => {
       </div>
 
       {/* For screens lg and below */}
-      <div className="lg:flex xl:hidden h-screen w-full flex-col py-3 gap-2 overflow-y-auto">
+      <div className="lg:flex xl:hidden w-full flex-col py-3 gap-2">
         <Header />
         <div className="flex flex-col justify-between w-full gap-2">
           <div className="flex gap-2">

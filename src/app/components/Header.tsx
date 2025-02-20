@@ -18,8 +18,8 @@ export default function Header() {
       currentLanguage === "es-br" ||
       currentLanguage === "pt" ||
       currentLanguage === "pt-br"
-      ? "lg:text-3xl xl:text-xl 2xl:text-2xl"
-      : "lg:text-5xl xl:text-2xl 2xl:text-3xl";
+      ? "text-2xl lg:text-3xl xl:text-xl 2xl:text-2xl"
+      : "text-2xl lg:text-5xl xl:text-2xl 2xl:text-3xl";
   };
 
   const getTextSizeSubheading = () => {
@@ -89,7 +89,7 @@ export default function Header() {
         {/* Knight or King */}
 
         {theme === "light" ? (
-          <div className="h-16 flex md:w-auto md:h-60 lg:h-72 2xl:h-72 flex-shrink-0">
+          <div className="h-16 flex md:w-auto sm:h-32 md:h-60 lg:h-72 2xl:h-72 flex-shrink-0">
             <Image
               src={WoodenKnight}
               width={0}
@@ -101,7 +101,7 @@ export default function Header() {
             />
           </div>
         ) : (
-          <div className="h-16 w-auto md:h-60 lg:h-72 2xl:h-72 flex-shrink-0">
+          <div className="h-16 w-auto sm:h-32 md:h-60 lg:h-72 2xl:h-72 flex-shrink-0">
             <Image
               src={GoldenKing}
               width={0}
