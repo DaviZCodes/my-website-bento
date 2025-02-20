@@ -1,4 +1,4 @@
-# [daviz.codes](daviz.codes)
+# [daviz.codes](https://www.daviz.codes)
 
 ## My personal website 
 
