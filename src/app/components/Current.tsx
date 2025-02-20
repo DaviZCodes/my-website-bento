@@ -12,7 +12,7 @@ export default function Current() {
 
   const getTextSize = () => {
     const currentLanguage = i18n.language;
-    console.log(currentLanguage);
+
     return currentLanguage === "es" ||
       currentLanguage === "es-br" ||
       currentLanguage === "pt" ||

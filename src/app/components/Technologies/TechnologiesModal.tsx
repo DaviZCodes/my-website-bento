@@ -52,6 +52,7 @@ const TechnologiesModal: React.FC<TechnologiesModalProps> = ({ onClose }) => {
             e.stopPropagation();
             onClose();
           }}
+          aria-label="Close Modal"
         >
           &times;
         </button>

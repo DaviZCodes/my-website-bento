@@ -19,7 +19,7 @@ export default function Blog() {
         >
           {t("Blog")}
         </div>
-        <HiExternalLink size={26} />
+        <HiExternalLink size={30} />
       </div>
     </Link>
   );

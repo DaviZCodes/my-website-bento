@@ -24,6 +24,7 @@ export default function Polyglot() {
           {t("Languages")}
         </div>
         <button
+          aria-label="English"
           title="English"
           onClick={() => switchLanguage("us-en")}
           className="px-3 py-2 font-semibold rounded-lg bg-[#fdaf67e3] cursor-pointer whitespace-nowrap transition-all duration-160 hover:bg-white hover:text-[#0A3161] shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]
@@ -33,6 +34,7 @@ export default function Polyglot() {
           us-en
         </button>
         <button
+          aria-label="Spanish"
           title="Spanish"
           onClick={() => switchLanguage("es-br")}
           className="px-3 py-2 font-semibold rounded-lg bg-[#fdaf67e3]  cursor-pointer whitespace-nowrap transition-all duration-160 hover:bg-[#F1BF00] hover:text-[#AA151B] shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]
@@ -42,6 +44,7 @@ export default function Polyglot() {
           es-br
         </button>
         <button
+          aria-label="Mandarin"
           title="Mandarin"
           onClick={() => switchLanguage("zh-cn")}
           className="px-3 py-2 font-semibold rounded-lg bg-[#fdaf67e3] cursor-pointer whitespace-nowrap transition-all duration-160 hover:bg-[#EE1C25] hover:text-[#FFFF00] shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]
@@ -51,6 +54,7 @@ export default function Polyglot() {
           zh-cn
         </button>
         <button
+          aria-label="Portuguese"
           title="Portuguese"
           onClick={() => switchLanguage("pt-br")}
           className="px-3 py-2 font-semibold rounded-lg bg-[#fdaf67e3] cursor-pointer whitespace-nowrap transition-all duration-160 hover:bg-[#009739] hover:text-[#FEDD00] shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]
@@ -72,6 +76,7 @@ export default function Polyglot() {
 
         <div className="flex gap-x-1">
           <button
+            aria-label="English"
             title="English"
             onClick={() => switchLanguage("us-en")}
             className="p-3 text-lg font-semibold rounded-lg bg-[#fdaf67e3] cursor-pointer whitespace-nowrap transition-all duration-160 hover:bg-white hover:text-[#0A3161] shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]
@@ -81,6 +86,7 @@ export default function Polyglot() {
             us-en
           </button>
           <button
+            aria-label="Spanish"
             title="Spanish"
             onClick={() => switchLanguage("es-br")}
             className="p-3 text-lg font-semibold rounded-lg bg-[#fdaf67e3]  cursor-pointer whitespace-nowrap transition-all duration-160 hover:bg-[#F1BF00] hover:text-[#AA151B] shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]
@@ -91,6 +97,7 @@ export default function Polyglot() {
           </button>
 
           <button
+            aria-label="Mandarin"
             title="Mandarin"
             onClick={() => switchLanguage("zh-cn")}
             className="p-3 text-lg font-semibold rounded-lg bg-[#fdaf67e3] cursor-pointer whitespace-nowrap transition-all duration-160 hover:bg-[#EE1C25] hover:text-[#FFFF00] shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]
@@ -100,6 +107,7 @@ export default function Polyglot() {
             zh-cn
           </button>
           <button
+            aria-label="Portuguese"
             title="Portuguese"
             onClick={() => switchLanguage("pt-br")}
             className="p-3 text-lg font-semibold rounded-lg bg-[#fdaf67e3] cursor-pointer whitespace-nowrap transition-all duration-160 hover:bg-[#009739] hover:text-[#FEDD00] shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]
