@@ -1,4 +1,4 @@
-# https://davizcodes.vercel.app
+# https://www.daviz.codes or daviz.codes
 
 ## My personal website 
 
