@@ -18,10 +18,14 @@ export default function Footer() {
 
   return (
     <footer
-      className={`bg-[#fdaf67e3] p-6 rounded-xl ${getTextSize()}
-    dark:bg-[#e0ee60] dark:text-[#112336]`}
+      className={`bg-[#fdaf67e3] p-2 rounded-xl ${getTextSize()}
+    dark:bg-[#e0ee60] dark:text-[#112336]
+    xl:p-3 2xl:p-6`}
     >
-      <div>
+      <div
+        className="text-sm
+      2xl:text-lg"
+      >
         &copy; {new Date().getFullYear()} {t("Footer")}
       </div>
     </footer>

@@ -25,36 +25,50 @@ export default function Header() {
   return (
     <section>
       <div
-        className="flex border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-6 bg-[#f5e2b6]
-      dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60]"
+        className="flex border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-3 bg-[#f5e2b6]
+      dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60] 
+      xl:p-5 2xl:p-6"
       >
-        <div className="flex flex-col justify-between mr-12">
-          {/*<div className="w-full border bg-slate-50 rounded-2xl p-6 shadow-lg">*/}
-          <div className="text-3xl flex">
-            <span role="img" aria-label="wave" className="animate-wave">
+        <div
+          className="flex flex-col justify-between 
+        xl:mr-6 2xl:mr-12"
+        >
+          <div className="flex">
+            <span
+              role="img"
+              aria-label="wave"
+              className="text-2xl animate-wave
+              lg:text-3xl"
+            >
               👋
             </span>
 
-            <div className="ml-1 font-semibold">{t("Greeting")}</div>
+            <div
+              className="ml-1 font-semibold
+            lg:text-2xl 2xl:text-3xl"
+            >
+              {t("Greeting")}
+            </div>
           </div>
 
           <div
-            className={`text-gray-700 mt-1 mb-6 ${getTextSize()} dark:text-white`}
+            className={`text-gray-700 mt-1 ${getTextSize()} dark:text-white text-md
+            lg:text-lg 2xl:text-2xl lg:mb-2 2xl:mb-6 `}
           >
             {t("Introduction")}
           </div>
 
-          <div className={`${getTextSize()}`}>{t("Introduction-2")}</div>
+          <div className={`mt-1 ${getTextSize()}`}>{t("Introduction-2")}</div>
 
-          <div className={`${getTextSize()}`}>{t("Introduction-3")}</div>
+          <div className={`mt-1 ${getTextSize()}`}>{t("Introduction-3")}</div>
 
-          <div className={`${getTextSize()}`}>{t("AboutMe")}</div>
+          <div className={`mt-1 ${getTextSize()}`}>{t("AboutMe")}</div>
         </div>
 
         {/* Knight or King */}
 
         {theme === "light" ? (
-          <div className="w-auto h-80 flex-shrink-0">
+          <div className="w-auto h-36 lg:h-72 2xl:h-80 flex-shrink-0">
             <Image
               src={WoodenKnight}
               width={0}
@@ -66,7 +80,7 @@ export default function Header() {
             />
           </div>
         ) : (
-          <div className="w-auto h-80 flex-shrink-0">
+          <div className="w-auto h-36 lg:h-72 2xl:h-80 flex-shrink-0">
             <Image
               src={GoldenKing}
               width={0}

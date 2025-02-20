@@ -12,13 +12,19 @@ export default function Projects() {
   const { t } = useTranslation();
 
   return (
-    <section className="flex-1">
+    <section>
       <div
-        className="flex flex-col h-full border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-6 bg-[#f5e2b6]
-      dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60]"
+        className="flex flex-col border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-3 bg-[#f5e2b6]
+      dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60]
+      xl:p-5 2xl:p-6"
       >
         <div className="flex justify-between">
-          <div className="font-bold text-2xl">{t("FeaturedProjects")}</div>
+          <div
+            className="font-bold text-xl
+          xl:text-2xl 2xl:text-3xl"
+          >
+            {t("FeaturedProjects")}
+          </div>
 
           <Link href="/projects" title="More projects">
             <button>
@@ -27,16 +33,25 @@ export default function Projects() {
           </Link>
         </div>
 
-        <div className="flex justify-between font-semibold text-xl mt-3 gap-2">
+        <div
+          className="flex justify-between font-semibold text-md mt-2 gap-2
+        md:text-xl 2xl:mt-5 2xl:text-2xl"
+        >
           <Link
             href="https://arter-generative-ai.vercel.app"
             target="_blank"
             className="flex flex-col items-center w-1/3"
           >
-            <div className="mb-2">Arter</div>
             <div
-              className="w-full h-72 p-3 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
-            dark:hover:border-[#e0ee60]"
+              className="mb-1
+            2xl:mb-2"
+            >
+              Arter
+            </div>
+            <div
+              className="w-full h-36 p-3 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
+            dark:hover:border-[#e0ee60]
+            xl:h-56 2xl:h-80"
             >
               <Image
                 src={ArterLogo}
@@ -55,10 +70,16 @@ export default function Projects() {
             target="_blank"
             className="flex flex-col items-center w-1/3"
           >
-            <div className="mb-2">Lunar Excavator</div>
             <div
-              className="w-full h-72 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
-            dark:hover:border-[#e0ee60]"
+              className="mb-1
+            2xl:mb-2"
+            >
+              Lunar Excavator
+            </div>
+            <div
+              className="w-full h-36 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
+            dark:hover:border-[#e0ee60]
+            xl:h-56 2xl:h-80"
             >
               <Image
                 src={NYURDTLogo}
@@ -77,10 +98,16 @@ export default function Projects() {
             target="_blank"
             className="flex flex-col items-center w-1/3"
           >
-            <div className="mb-2">GitHub Licenses Ranked</div>
             <div
-              className="w-full h-72 p-3 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
-            dark:hover:border-[#e0ee60]"
+              className="mb-1
+            2xl:mb-2"
+            >
+              GitHub Licenses Ranked
+            </div>
+            <div
+              className="w-full h-36 p-3 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
+            dark:hover:border-[#e0ee60]
+            xl:h-56 2xl:h-80"
             >
               <Image
                 src={GitHubLicensesRankedLogo}

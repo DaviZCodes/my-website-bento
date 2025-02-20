@@ -57,20 +57,39 @@ export default function Current() {
 
   return (
     <div
-      className="flex flex-col border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-6 bg-[#ffd79b] relative overflow-hidden
-    dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60] dark:hover:bg-[#e0ee60] dark:hover:text-[#112336]"
+      className="flex flex-col border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-3 bg-[#ffd79b] relative overflow-hidden
+    dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60] dark:hover:bg-[#e0ee60] dark:hover:text-[#112336]
+    xl:p-5 2xl:p-6"
     >
       <div className="relative z-10 flex justify-between">
         <div>
-          <div className="font-bold text-2xl">{t("Current")}</div>
-          <div className={`font-light ${getTextSize()}`}>
+          <div
+            className="font-bold text-xl
+          xl:text-2xl"
+          >
+            {t("Current")}
+          </div>
+          <div
+            className={`font-light ${getTextSize()} text-sm 
+            2xl:text-lg`}
+          >
             {t("CurrentSubtitle")}
           </div>
         </div>
-        <div className="text-lg font-mono">{currTime}</div>
+        <div
+          className="font-mono text-sm
+        xl:text-lg"
+        >
+          {currTime}
+        </div>
       </div>
 
-      <div className="relative z-10 text-xl my-10">{t("CurrentRole")}</div>
+      <div
+        className="relative z-10 text-xl my-3
+      xl:my-6 2xl:my-10"
+      >
+        {t("CurrentRole")}
+      </div>
       <div className="font-light text-xl">{t("NewYork")}</div>
 
       <div

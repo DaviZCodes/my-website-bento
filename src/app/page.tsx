@@ -12,10 +12,14 @@ import Footer from "./components/Footer";
 const Home = () => {
   return (
     <div
-      className="h-screen px-60 py-6 bg-[#f7e6bc] flex justify-center gap-3 overflow-hidden
-    dark:bg-[#0d1c2b]"
+      className="h-screen bg-[#f7e6bc] flex justify-center overflow-hidden
+    dark:bg-[#0d1c2b] p-2
+    lg:px-12 xl:px-32 2xl:px-60 lg:py-3 xl:py-6 2xl:py-12 lg:gap-2 2xl:gap-3"
     >
-      <div className="flex-grow max-w-5xl flex flex-col gap-y-3">
+      <div
+        className="flex-grow max-w-5xl flex flex-col gap-2 
+      2xl:gap-y-3"
+      >
         <Header />
 
         <div className="flex justify-between w-full gap-2">
@@ -32,7 +36,10 @@ const Home = () => {
         <Projects />
       </div>
 
-      <div className="flex flex-col gap-y-3 w-[30%] max-w-sm">
+      <div
+        className="flex flex-col gap-y-2 max-w-sm
+      2xl:gap-y-3 xl:w-[70%] 2xl:w-[30%]"
+      >
         <ContactMe />
         <Current />
         <Experience />
