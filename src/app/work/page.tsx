@@ -2,10 +2,37 @@ import Link from "next/link";
 
 export default function Work() {
   return (
-    <section className="bg-slate-200 py-6 px-2 lg:px-3">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section
+      className="flex flex-col min-h-screen bg-[#f7e6bc] items-center
+    dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60] p-3
+      sm:px-6 md:px-12 lg:px-16 lg:py-2 xl:px-52 xl:py-3 2xl:px-60 2xl:py-6"
+    >
+      <div className="w-full flex justify-start sticky top-0 z-10">
+        <Link
+          href={"/"}
+          className="font-semibold text-xl px-3 py-2 my-2 border-2 transition-all duration-160 rounded-lg text-white bg-black
+          dark:border-[#e0ee60]
+          lg:border-black lg:hover:bg-black lg:hover:text-white
+          xl:mt-6"
+        >
+          Home
+        </Link>
+      </div>
+
+      <div
+        className="text-center
+      xl:mt-6 2xl:mt-12"
+      >
+        <h2
+          className="text-2xl mb-2 font-bold
+        sm:mb-3 md:mb-6 lg:mb-8 xl:mb-10 2xl:mb-12 sm:text-3xl xl:text-4xl 2xl:text-5xl"
+        >
+          Work Experience
+        </h2>
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2
+        2xl:gap-6"
+        >
           <WorkExperienceCard
             href="https://www.amazon.com"
             title="Software Engineer Intern"
@@ -73,12 +100,13 @@ const WorkExperienceCard: React.FC<WorkExperienceCardProps> = ({
   return (
     <Link href={href} target="_blank" title="Click for more">
       <div
-        className="p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer"
+        className="border-2 border-yellow-50 p-3 rounded-xl shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02] cursor-pointer
+        xl:p-5 2xl:p-6"
         style={{ backgroundColor: bgColor, color: textColor }}
       >
         <h3 className="text-xl font-bold mb-2">{title}</h3>
         <h2 className="text-xl cursor-pointer font-semibold">{company}</h2>
-        <p>{description}</p>
+        <p className="text-left mt-2">{description}</p>
       </div>
     </Link>
   );

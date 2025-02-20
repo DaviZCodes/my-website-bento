@@ -1,194 +1,240 @@
-import Link from "next/link";
+"use client";
+
 import Image from "next/image";
-import { DiReact, DiSass, DiNodejsSmall } from "react-icons/di";
-import { BiLogoMongodb } from "react-icons/bi";
-import { SiTypescript, SiTailwindcss, SiRos, SiExpress } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
+import Link from "next/link";
+import { HiExternalLink } from "react-icons/hi";
+import ArterLogo from "./images/arter_logo.png";
+import NYURDTLogo from "./images/nyu_rdt.png";
+import NYURDTLogoDark from "./images/nyu_rdt_dark.png";
+import GitHubLicensesRankedLogo from "./images/licenses_logo.png";
+import { useTranslation } from "react-i18next";
+import { useTheme } from "./ThemeContext";
 
 export default function Projects() {
+  const { t } = useTranslation();
+  const { theme } = useTheme();
+
+  const LightOrDarkNYURDTLogo = theme === "light" ? NYURDTLogo : NYURDTLogoDark;
+
   return (
-    <section className="bg-slate-300 py-6 px-2 lg:px-3">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Link href="https://arter-generative-ai.vercel.app" target="_blank">
+    <section>
+      <div
+        className="flex flex-col border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-3 bg-[#f5e2b6]
+      dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60]
+      xl:p-5 2xl:p-6"
+      >
+        {/* For screens md and larger */}
+        <div className="hidden md:flex md:flex-col">
+          <div className="flex justify-between">
             <div
-              className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]"
-              title="Click for more"
+              className="font-bold text-xl
+          xl:text-2xl"
             >
-              <h3 className="text-xl font-bold mb-2">Arter - Generative AI</h3>
-              <p>
-                Generative AI website that transforms scribbles into realistic
-                and colorful artworks.
-              </p>
-              <div className="flex justify-center gap-2 pt-2">
-                <SiTypescript size={45} color="#007acc" title="Typescript" />
-                <TbBrandNextjs size={50} color="black" title="NextJs" />
-                <SiTailwindcss size={50} color="#03a9f4" title="Tailwind CSS" />
-                <div className="w-11 h-11">
-                  <Image
-                    src="/convex.png"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-full"
-                    title="Convex.dev"
-                    alt="Convex Logo"
-                  />
-                </div>
-                <div className="w-11 h-11">
-                  <Image
-                    src="/replicate.png"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-full"
-                    title="Replicate.com"
-                    alt="Replicate Logo"
-                  />
-                </div>
-              </div>
+              {t("FeaturedProjects")}
             </div>
-          </Link>
 
-          <Link href="https://tinyurl.com/lunarexcav" target="_blank">
-            <div
-              className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]"
-              title="Click for more"
-            >
-              <h3 className="text-xl font-bold mb-2">Lunar excavator robot</h3>
-              <p>
-                Implemented an AprilTag/sensor data program, allowing the robot
-                to detect objects and calibrate itself. Wrote autonomous
-                locomotion, excavation, and deposition scripts using ROS nodes.
-              </p>
-              <div className="flex justify-center gap-2 pt-2">
-                <div className="w-11 h-11">
-                  <Image
-                    src="/python.png"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-full"
-                    title="Python"
-                    alt="Python Logo"
-                  />
-                </div>
-                <div className="w-11 h-10">
-                  <Image
-                    src="/opencv.png"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-full"
-                    title="OpenCV"
-                    alt="OpenCV Logo"
-                  />
-                </div>
-                <div className="w-11 h-11">
-                  <Image
-                    src="/apriltag.png"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-full"
-                    title="AprilTag"
-                    alt="AprilTag Logo"
-                  />
-                </div>
-                <SiRos size={39} color="black" title="ROS" />
-              </div>
-            </div>
-          </Link>
+            <Link href="/projects" title="More projects">
+              <button>
+                <HiExternalLink size={26} className="" />
+              </button>
+            </Link>
+          </div>
 
-          <Link
-            href="https://github.com/DaviZCodes/pet-peeves-blog"
-            target="_blank"
+          <div
+            className="flex justify-between font-semibold text-base mt-2 gap-2
+        md:text-xl 2xl:mt-3 2xl:text-2xl"
           >
-            <div
-              className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]"
-              title="Click for more"
+            <Link
+              href="https://arter-generative-ai.vercel.app"
+              target="_blank"
+              className="flex flex-col items-center w-1/3"
             >
-              <h3 className="text-xl font-bold mb-2">Pet Peeves - MERN Blog</h3>
-              <p>
-                A blog for pet lovers who wish to share about their furry - or
-                raw chicken - pets.
-              </p>
-              <div className="flex justify-center gap-2 pt-2">
-                <SiTypescript size={45} color="#007acc" title="Typescript" />
-                <DiReact size={50} color="#61dbfb" title="React" />
-                <DiSass size={50} color="#c69" title="SASS" />
-                <DiNodejsSmall size={50} color="#3C873A" title="NodeJS" />
-                <SiExpress size={50} color="grey" title="ExpressJS" />
-                <BiLogoMongodb size={50} color="#4DB33D" title="MongoDB" />
+              <div
+                className="mb-1
+            2xl:mb-2"
+              >
+                Arter
               </div>
-            </div>
-          </Link>
+              <div
+                className="w-full h-36 p-3 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
+            dark:hover:border-[#e0ee60]
+            xl:h-52 2xl:h-64"
+              >
+                <Image
+                  src={ArterLogo}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-auto h-full object-contain"
+                  title="Arter generative AI"
+                  alt="Arter generative AI"
+                />
+              </div>
+            </Link>
 
-          <Link
-            href="https://github-licenses-ranked.vercel.app"
-            target="_blank"
-          >
-            <div
-              className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]"
-              title="Click for more"
+            <Link
+              href="https://tinyurl.com/lunarexcav"
+              target="_blank"
+              className="flex flex-col items-center w-1/3"
             >
-              <h3 className="text-xl font-bold mb-2">GitHub Licenses Ranked</h3>
-              <p>
-                Complex GitHub licenses are simplified and ranked to help
-                developers choose the right license for their repository.
-              </p>
-              <div className="flex justify-center gap-2 pt-2">
-                <SiTypescript size={45} color="#007acc" title="Typescript" />
-                <TbBrandNextjs size={50} color="black" title="NextJs" />
-                <SiTailwindcss size={50} color="#03a9f4" title="Tailwind CSS" />
+              <div
+                className="mb-1
+            2xl:mb-2"
+              >
+                Lunar Excavator
               </div>
-            </div>
-          </Link>
+              <div
+                className="w-full h-36 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
+            dark:hover:border-[#e0ee60]
+            xl:h-52 2xl:h-64"
+              >
+                <Image
+                  src={LightOrDarkNYURDTLogo}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-auto h-full object-contain"
+                  title="Lunar Excavator"
+                  alt="Lunar Excavator"
+                />
+              </div>
+            </Link>
 
-          <Link
-            href="https://react-to-do-list-frontend.vercel.app"
-            target="_blank"
-          >
-            <div
-              className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]"
-              title="Click for more"
+            <Link
+              href="https://github-licenses-ranked.vercel.app"
+              target="_blank"
+              className="flex flex-col items-center w-1/3"
             >
-              <h3 className="text-xl font-bold mb-2">To-do list</h3>
-              <p>Simple to-do list to get your work done!</p>
-              <div className="flex justify-center gap-2 pt-2">
-                <SiTypescript size={45} color="#007acc" title="Typescript" />
-                <DiReact size={50} color="#61dbfb" title="React" />
-                <DiNodejsSmall size={50} color="#3C873A" title="NodeJS" />
+              <div
+                className="mb-1
+            2xl:mb-2"
+              >
+                GitHub Licenses Ranked
               </div>
-            </div>
-          </Link>
+              <div
+                className="w-full h-36 p-3 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
+            dark:hover:border-[#e0ee60]
+            xl:h-52 2xl:h-64"
+              >
+                <Image
+                  src={GitHubLicensesRankedLogo}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-auto h-full object-contain"
+                  title="GitHub Licenses Ranked"
+                  alt="GitHub Licenses Ranked"
+                />
+              </div>
+            </Link>
+          </div>
+        </div>
 
-          <Link
-            href="https://github.com/DaviZCodes/my-discord-bot"
-            target="_blank"
-          >
+        {/* For screens sm and smaller */}
+        <div className="md:hidden">
+          <div className="flex justify-between">
             <div
-              className="bg-gray-200 p-6 rounded-lg shadow-md transition-transform ease-in-out duration-300 scale-x-100 hover:scale-[1.02]"
-              title="Click for more"
+              className="font-bold text-xl
+          xl:text-2xl 2xl:text-2xl"
             >
-              <h3 className="text-xl font-bold mb-2">Discord Bot</h3>
-              <p>Interactive discord bot with several functionalities.</p>
-              <div className="flex justify-center gap-2 pt-2">
-                <div className="w-11 h-11">
-                  <Image
-                    src="/python.png"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-full"
-                    title="Python"
-                    alt="Python Logo"
-                  />
-                </div>
-              </div>
+              {t("FeaturedProjects")}
             </div>
-          </Link>
+
+            <Link href="/projects" title="More projects">
+              <button>
+                <HiExternalLink size={26} className="" />
+              </button>
+            </Link>
+          </div>
+
+          <div
+            className="flex flex-col font-semibold text-lg gap-2
+        md:text-xl 2xl:mt-3 2xl:text-2xl"
+          >
+            <Link
+              href="https://arter-generative-ai.vercel.app"
+              target="_blank"
+              className="flex flex-col items-center w-full"
+            >
+              <div
+                className="mb-1
+            2xl:mb-2"
+              >
+                Arter
+              </div>
+              <div
+                className="w-full h-36 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
+            dark:hover:border-[#e0ee60]
+            xl:h-56 2xl:h-64"
+              >
+                <Image
+                  src={ArterLogo}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-auto h-full object-contain"
+                  title="Arter generative AI"
+                  alt="Arter generative AI"
+                />
+              </div>
+            </Link>
+
+            <Link
+              href="https://tinyurl.com/lunarexcav"
+              target="_blank"
+              className="flex flex-col items-center w-full"
+            >
+              <div
+                className="mb-1
+            2xl:mb-2"
+              >
+                Lunar Excavator
+              </div>
+              <div
+                className="w-full h-36 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
+            dark:hover:border-[#e0ee60]
+            xl:h-56 2xl:h-64"
+              >
+                <Image
+                  src={LightOrDarkNYURDTLogo}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-auto h-full object-contain"
+                  title="Lunar Excavator"
+                  alt="Lunar Excavator"
+                />
+              </div>
+            </Link>
+
+            <Link
+              href="https://github-licenses-ranked.vercel.app"
+              target="_blank"
+              className="flex flex-col items-center w-full"
+            >
+              <div
+                className="mb-1
+            2xl:mb-2"
+              >
+                GitHub Licenses Ranked
+              </div>
+              <div
+                className="w-full h-36 p-1 flex justify-center items-center border-2 border-yellow-50 hover:border-[#fdaf67e3] rounded-xl shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
+            dark:hover:border-[#e0ee60]
+            xl:h-56 2xl:h-64"
+              >
+                <Image
+                  src={GitHubLicensesRankedLogo}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-auto h-full object-contain"
+                  title="GitHub Licenses Ranked"
+                  alt="GitHub Licenses Ranked"
+                />
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
