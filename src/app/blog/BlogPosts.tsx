@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function BlogPosts() {
   return (
     <div className="flex flex-col mt-6 gap-y-6">
@@ -46,6 +48,19 @@ function BlogEntry({
           </div>
         ))}
       </div>
+      {image != "" && (
+        <div className="w-auto mt-3">
+          <Image
+            src={image}
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-full"
+            title={title}
+            alt={title}
+          />
+        </div>
+      )}
       <HorizontalLine />
     </div>
   );
@@ -53,12 +68,20 @@ function BlogEntry({
 
 const blogPostEntries = [
   {
+    datePosted: "February 19, 2025",
+    title: "Entry #8: Website revamp",
+    tag: "Update",
+    image: "https://i.imgur.com/MqpKcPn.jpeg",
+    content:
+      "Oh my. It's exactly 12 midnight right now. It's Thursday on a school night. I have to study for my midterms. But I'm almost complete with the website. I'm just stuck on a responsiveness issue, but I'll resolve that soon. It's been many days of designing, developing, and also translating lol.\n\nIf there's a will, there's a way. Wow... I actually managed to pull this off. Just take a look at my design. It took me some time to design it. I gained some inspiration from bento-style websites, and I recently started liking these types of artistic websites a lot. The design is mine, and I am so proud of it. Just take a look at the picture. I know I'm not an artist, but that's why I'm an arter (if you get the joke, you're a real one).",
+  },
+  {
     datePosted: "February 18, 2025",
     title: "Entry #7: Last semester",
     tag: "Update",
     image: "",
     content:
-      "It's my last semester of university. I have been enjoying my time. I have some ideas planned, and I will make sure they turn into reality. I will be releasing the new version of my personal website soon.",
+      "It's my last semester of university. I have been enjoying my time. University was not exactly what I imagined it would be. I guess it's because I watched too many shows. I imagined it would be like High School Musical or something. I have some ideas planned, and I will make sure they turn into reality. I will be releasing the new version of my personal website soon.",
   },
   {
     datePosted: "Aug 20, 2024",
