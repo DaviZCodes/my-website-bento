@@ -12,15 +12,14 @@ export default function Footer() {
       currentLanguage === "es-br" ||
       currentLanguage === "pt" ||
       currentLanguage === "pt-br"
-      ? "text-md"
+      ? "text-base"
       : "text-lg";
   };
 
   return (
     <footer
-      className={`bg-[#fdaf67e3] p-2 rounded-xl ${getTextSize()}
-    dark:bg-[#e0ee60] dark:text-[#112336]
-    xl:p-3`}
+      className={`bg-[#fdaf67e3] p-3 rounded-xl ${getTextSize()}
+    dark:bg-[#e0ee60] dark:text-[#112336]`}
     >
       <div
         className="text-sm

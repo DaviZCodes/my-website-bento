@@ -26,7 +26,7 @@ function BlogEntry({
   return (
     <div className="bg-blue-800 text-white shadow-md rounded-2xl p-6 lg:p-8 max-w-3xl mx-auto">
       <div className="flex justify-between">
-        <div className="text-white text-md text-center">{datePosted}</div>
+        <div className="text-white text-base text-center">{datePosted}</div>
         <div
           className="text-black border-2 bg-orange-200 p-2 rounded-xl shadow-md
         dark:bg-[#e0ee60] dark:text-[#112336] dark:border-2 dark:border-[#112336]"

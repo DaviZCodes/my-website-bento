@@ -12,14 +12,34 @@ export default function Header() {
   const { theme } = useTheme();
   const { t } = useTranslation();
 
-  const getTextSize = () => {
+  const getTextSizeTitle = () => {
     const currentLanguage = i18n.language;
     return currentLanguage === "es" ||
       currentLanguage === "es-br" ||
       currentLanguage === "pt" ||
       currentLanguage === "pt-br"
-      ? "md:text-xl xl:text-md"
-      : "md:text-2xl xl:text-lg";
+      ? "lg:text-3xl xl:text-xl 2xl:text-2xl"
+      : "lg:text-5xl xl:text-2xl 2xl:text-3xl";
+  };
+
+  const getTextSizeSubheading = () => {
+    const currentLanguage = i18n.language;
+    return currentLanguage === "es" ||
+      currentLanguage === "es-br" ||
+      currentLanguage === "pt" ||
+      currentLanguage === "pt-br"
+      ? "lg:text-xl xl:text-base 2xl:text-lg"
+      : "lg:text-xl xl:text-lg 2xl:text-xl";
+  };
+
+  const getTextSizeDesc = () => {
+    const currentLanguage = i18n.language;
+    return currentLanguage === "es" ||
+      currentLanguage === "es-br" ||
+      currentLanguage === "pt" ||
+      currentLanguage === "pt-br"
+      ? "md:text-xl xl:text-lg"
+      : "md:text-2xl xl:text-xl";
   };
 
   return (
@@ -31,7 +51,7 @@ export default function Header() {
       >
         <div
           className="flex flex-col justify-between 
-        lg:mr-6 2xl:mr-12"
+        lg:mr-6"
         >
           <div className="flex lg:mb-3 xl:mb-0">
             <span
@@ -43,32 +63,33 @@ export default function Header() {
               👋
             </span>
 
-            <div
-              className="ml-1 font-semibold
-            lg:text-5xl xl:text-2xl 2xl:text-3xl"
-            >
+            <div className={`ml-1 font-semibold ${getTextSizeTitle()}`}>
               {t("Greeting")}
             </div>
           </div>
 
           <div
-            className={`text-gray-700 mt-1 ${getTextSize()} dark:text-white text-md
-            lg:text-2xl xl:text-lg 2xl:text-2xl lg:mb-3 2xl:mb-6`}
+            className={`text-gray-700 mt-1 ${getTextSizeSubheading()} dark:text-white text-base
+            lg:mb-3`}
           >
             {t("Introduction")}
           </div>
 
-          <div className={`mt-1 ${getTextSize()}`}>{t("Introduction-2")}</div>
+          <div className={`mt-1 ${getTextSizeDesc()}`}>
+            {t("Introduction-2")}
+          </div>
 
-          <div className={`mt-1 ${getTextSize()}`}>{t("Introduction-3")}</div>
+          <div className={`mt-1 ${getTextSizeDesc()}`}>
+            {t("Introduction-3")}
+          </div>
 
-          <div className={`mt-1 ${getTextSize()}`}>{t("AboutMe")}</div>
+          <div className={`mt-1 ${getTextSizeDesc()}`}>{t("AboutMe")}</div>
         </div>
 
         {/* Knight or King */}
 
         {theme === "light" ? (
-          <div className="w-auto h-36 lg:h-72 2xl:h-80 flex-shrink-0">
+          <div className="h-16 flex md:w-auto md:h-60 lg:h-72 2xl:h-72 flex-shrink-0">
             <Image
               src={WoodenKnight}
               width={0}
@@ -80,7 +101,7 @@ export default function Header() {
             />
           </div>
         ) : (
-          <div className="w-auto h-36 lg:h-72 2xl:h-80 flex-shrink-0">
+          <div className="h-16 w-auto md:h-60 lg:h-72 2xl:h-72 flex-shrink-0">
             <Image
               src={GoldenKing}
               width={0}

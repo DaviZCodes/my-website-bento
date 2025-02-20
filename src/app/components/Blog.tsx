@@ -10,9 +10,8 @@ export default function Blog() {
   return (
     <Link href={"/blog"} className="text-lg">
       <div
-        className="flex justify-between border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-3 bg-[#f5e2b6]
-      dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60] dark:hover:bg-[#e0ee60] dark:hover:text-[#112336]
-      xl:p-5"
+        className="flex justify-between border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-5 bg-[#f5e2b6]
+      dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60] dark:hover:bg-[#e0ee60] dark:hover:text-[#112336]"
       >
         <div
           className="font-bold text-xl

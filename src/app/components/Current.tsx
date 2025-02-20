@@ -18,7 +18,7 @@ export default function Current() {
       currentLanguage === "pt" ||
       currentLanguage === "pt-br"
       ? "text-sm"
-      : "text-md";
+      : "text-base";
   };
 
   const [currTime, setCurrTime] = useState<string | null>(null);
