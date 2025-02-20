@@ -51,7 +51,7 @@ const Home = () => {
       </div>
 
       {/* For screens lg and below */}
-      <div className="lg:flex xl:hidden w-full flex-col py-3 gap-2 overflow-y-auto">
+      <div className="lg:flex xl:hidden h-screen w-full flex-col py-3 gap-2 overflow-y-auto">
         <Header />
         <div className="flex flex-col justify-between w-full gap-2">
           <div className="flex gap-2">
