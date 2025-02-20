@@ -55,6 +55,7 @@ function BlogEntry({
             width={0}
             height={0}
             sizes="100vw"
+            loading="lazy"
             className="w-full h-full"
             title={title}
             alt={title}

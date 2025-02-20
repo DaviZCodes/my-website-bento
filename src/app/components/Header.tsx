@@ -95,6 +95,7 @@ export default function Header() {
               width={0}
               height={0}
               sizes="100vw"
+              loading="lazy"
               className="w-auto h-full object-contain"
               title={t("Chess")}
               alt="Wooden Knight"
@@ -107,6 +108,7 @@ export default function Header() {
               width={0}
               height={0}
               sizes="100vw"
+              loading="lazy"
               className="w-auto h-full object-contain"
               title={t("Chess")}
               alt="Golden King"

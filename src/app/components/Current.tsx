@@ -12,7 +12,7 @@ export default function Current() {
 
   const getTextSize = () => {
     const currentLanguage = i18n.language;
-    console.log(currentLanguage);
+
     return currentLanguage === "es" ||
       currentLanguage === "es-br" ||
       currentLanguage === "pt" ||
@@ -27,7 +27,7 @@ export default function Current() {
   const fetchTime = async () => {
     try {
       const response = await axios.get(
-        "http://worldtimeapi.org/api/timezone/America/New_York"
+        "https://worldtimeapi.org/api/timezone/America/New_York"
       );
       const dateTime = new Date(response.data.datetime);
       const formattedTime = `${
@@ -101,7 +101,7 @@ export default function Current() {
           marginRight: "-50px",
         }}
       >
-        <Image src={AmazonLogo} alt="Amazon Logo" layout="intrinsic" />
+        <Image src={AmazonLogo} loading="lazy" alt="Amazon Logo" />
       </div>
     </div>
   );

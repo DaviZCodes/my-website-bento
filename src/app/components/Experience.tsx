@@ -19,8 +19,8 @@ export default function Experience() {
         >
           {t("Experience")}
         </div>
-        <button>
-          <HiExternalLink size={26} />
+        <button aria-label="My Work Experience">
+          <HiExternalLink size={30} />
         </button>
       </div>
     </Link>

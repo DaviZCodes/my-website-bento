@@ -34,8 +34,8 @@ export default function Projects() {
             </div>
 
             <Link href="/projects" title="More projects">
-              <button>
-                <HiExternalLink size={26} className="" />
+              <button aria-label="My Projects">
+                <HiExternalLink size={30} className="" />
               </button>
             </Link>
           </div>
@@ -65,6 +65,7 @@ export default function Projects() {
                   width={0}
                   height={0}
                   sizes="100vw"
+                  loading="lazy"
                   className="w-auto h-full object-contain"
                   title="Arter generative AI"
                   alt="Arter generative AI"
@@ -93,6 +94,7 @@ export default function Projects() {
                   width={0}
                   height={0}
                   sizes="100vw"
+                  loading="lazy"
                   className="w-auto h-full object-contain"
                   title="Lunar Excavator"
                   alt="Lunar Excavator"
@@ -121,6 +123,7 @@ export default function Projects() {
                   width={0}
                   height={0}
                   sizes="100vw"
+                  loading="lazy"
                   className="w-auto h-full object-contain"
                   title="GitHub Licenses Ranked"
                   alt="GitHub Licenses Ranked"
@@ -141,8 +144,8 @@ export default function Projects() {
             </div>
 
             <Link href="/projects" title="More projects">
-              <button>
-                <HiExternalLink size={26} className="" />
+              <button aria-label="My Projects">
+                <HiExternalLink size={30} className="" />
               </button>
             </Link>
           </div>
@@ -172,6 +175,7 @@ export default function Projects() {
                   width={0}
                   height={0}
                   sizes="100vw"
+                  loading="lazy"
                   className="w-auto h-full object-contain"
                   title="Arter generative AI"
                   alt="Arter generative AI"
@@ -200,9 +204,10 @@ export default function Projects() {
                   width={0}
                   height={0}
                   sizes="100vw"
+                  loading="lazy"
                   className="w-auto h-full object-contain"
-                  title="Lunar Excavator"
-                  alt="Lunar Excavator"
+                  title="RDT Logo"
+                  alt="RDT Logo"
                 />
               </div>
             </Link>
@@ -228,9 +233,10 @@ export default function Projects() {
                   width={0}
                   height={0}
                   sizes="100vw"
+                  loading="lazy"
                   className="w-auto h-full object-contain"
-                  title="GitHub Licenses Ranked"
-                  alt="GitHub Licenses Ranked"
+                  title="GitHub Licenses Ranked Website Logo"
+                  alt="GitHub Licenses Ranked Website Logo"
                 />
               </div>
             </Link>

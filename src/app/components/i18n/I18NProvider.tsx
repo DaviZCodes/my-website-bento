@@ -19,7 +19,7 @@ export default function I18nProvider({ children }: PropsWithChildren) {
   }, []);
 
   if (!isInitialized) {
-    return null; // or a loading spinner
+    return null;
   }
 
   return <I18nextProvider i18n={i18n}>{children}</I18nextProvider>;
