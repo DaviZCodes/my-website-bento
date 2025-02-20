@@ -13,12 +13,12 @@ export default function Polyglot() {
     <div
       className="flex border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl bg-[#f5e2b6] shadow-[4px_4px_10px_2px_rgba(253,175,103,0.5)]
     dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60] p-1
-    lg:px-3 2xl:px-6 2xl:py-2"
+    lg:px-3 lg:py-5 xl:py-1 2xl:px-6 2xl:py-2"
     >
       <div className="flex items-center gap-3">
         <div
           className="text-lg font-semibold whitespace-nowrap
-        lg:text-md 2xl:text-xl "
+        lg:text-lg xl:text-md 2xl:text-xl "
         >
           {t("Languages")}
         </div>
@@ -27,7 +27,7 @@ export default function Polyglot() {
           onClick={() => switchLanguage("us-en")}
           className="px-3 py-1 rounded-lg bg-[#fdaf67e3] cursor-pointer whitespace-nowrap transition-all duration-160 hover:bg-white hover:text-[#0A3161] shadow-[2px_2px_5px_1px_rgba(253,175,103,0.5)]
           dark:bg-[#e0ee60] dark:text-[#112336] dark:hover:bg-white dark:hover:text-[#0A3161]
-          lg:px-5 lg:py-2 2xl:py-3"
+          md:px-5 md:py-2 2xl:py-3"
         >
           us-en
         </button>

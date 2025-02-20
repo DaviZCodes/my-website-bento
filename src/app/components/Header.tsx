@@ -18,8 +18,8 @@ export default function Header() {
       currentLanguage === "es-br" ||
       currentLanguage === "pt" ||
       currentLanguage === "pt-br"
-      ? "text-md"
-      : "text-lg";
+      ? "md:text-xl xl:text-md"
+      : "md:text-2xl xl:text-lg";
   };
 
   return (
@@ -27,25 +27,25 @@ export default function Header() {
       <div
         className="flex border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-3 bg-[#f5e2b6]
       dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60] 
-      xl:p-5 2xl:p-6"
+      lg:p-5 2xl:p-6"
       >
         <div
           className="flex flex-col justify-between 
-        xl:mr-6 2xl:mr-12"
+        lg:mr-6 2xl:mr-12"
         >
-          <div className="flex">
+          <div className="flex lg:mb-3 xl:mb-0">
             <span
               role="img"
               aria-label="wave"
               className="text-2xl animate-wave
-              lg:text-3xl"
+              lg:text-5xl xl:text-3xl"
             >
               👋
             </span>
 
             <div
               className="ml-1 font-semibold
-            lg:text-2xl 2xl:text-3xl"
+            lg:text-5xl xl:text-2xl 2xl:text-3xl"
             >
               {t("Greeting")}
             </div>
@@ -53,7 +53,7 @@ export default function Header() {
 
           <div
             className={`text-gray-700 mt-1 ${getTextSize()} dark:text-white text-md
-            lg:text-lg 2xl:text-2xl lg:mb-2 2xl:mb-6 `}
+            lg:text-2xl xl:text-lg 2xl:text-2xl lg:mb-3 2xl:mb-6`}
           >
             {t("Introduction")}
           </div>
