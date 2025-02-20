@@ -20,7 +20,7 @@ export default function Footer() {
     <footer
       className={`bg-[#fdaf67e3] p-2 rounded-xl ${getTextSize()}
     dark:bg-[#e0ee60] dark:text-[#112336]
-    xl:p-3 2xl:p-6`}
+    xl:p-3`}
     >
       <div
         className="text-sm
