@@ -10,7 +10,7 @@ export default function Projects() {
     <section
       className="flex flex-col min-h-screen bg-[#f7e6bc] items-center
       dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60] p-3
-      sm:px-6 md:px-16 lg:px-32 lg:py-2 xl:px-52 xl:py-3 2xl:px-60 2xl:py-6"
+      sm:px-6 md:px-12 lg:px-16 lg:py-2 xl:px-52 xl:py-3 2xl:px-60 2xl:py-6"
     >
       <div className="w-full flex justify-start sticky top-0 z-10">
         <Link
