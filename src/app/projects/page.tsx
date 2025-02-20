@@ -63,6 +63,7 @@ export default function Projects() {
                     width={0}
                     height={0}
                     sizes="100vw"
+                    loading="lazy"
                     className="w-full h-full"
                     title="Convex.dev"
                     alt="Convex Logo"
@@ -74,6 +75,7 @@ export default function Projects() {
                     width={0}
                     height={0}
                     sizes="100vw"
+                    loading="lazy"
                     className="w-full h-full"
                     title="Replicate.com"
                     alt="Replicate Logo"
@@ -106,6 +108,7 @@ export default function Projects() {
                     width={0}
                     height={0}
                     sizes="100vw"
+                    loading="lazy"
                     className="w-full h-full"
                     title="Python"
                     alt="Python Logo"
@@ -117,6 +120,7 @@ export default function Projects() {
                     width={0}
                     height={0}
                     sizes="100vw"
+                    loading="lazy"
                     className="w-full h-full"
                     title="OpenCV"
                     alt="OpenCV Logo"
@@ -128,6 +132,7 @@ export default function Projects() {
                     width={0}
                     height={0}
                     sizes="100vw"
+                    loading="lazy"
                     className="w-full h-full"
                     title="AprilTag"
                     alt="AprilTag Logo"
@@ -238,6 +243,7 @@ export default function Projects() {
                     width={0}
                     height={0}
                     sizes="100vw"
+                    loading="lazy"
                     className="w-full h-full"
                     title="Python"
                     alt="Python Logo"
