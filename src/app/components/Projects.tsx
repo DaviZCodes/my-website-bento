@@ -35,7 +35,7 @@ export default function Projects() {
 
             <Link href="/projects" title="More projects">
               <button aria-label="My Projects">
-                <HiExternalLink size={30} className="" />
+                <HiExternalLink size={30} />
               </button>
             </Link>
           </div>
@@ -96,8 +96,8 @@ export default function Projects() {
                   sizes="100vw"
                   loading="lazy"
                   className="w-auto h-full object-contain"
-                  title="Lunar Excavator"
-                  alt="Lunar Excavator"
+                  title="RDT Logo"
+                  alt="RDT Logo"
                 />
               </div>
             </Link>
@@ -125,8 +125,8 @@ export default function Projects() {
                   sizes="100vw"
                   loading="lazy"
                   className="w-auto h-full object-contain"
-                  title="GitHub Licenses Ranked"
-                  alt="GitHub Licenses Ranked"
+                  title="GitHub Licenses Ranked Website Logo"
+                  alt="GitHub Licenses Ranked Website Logo"
                 />
               </div>
             </Link>
@@ -145,7 +145,7 @@ export default function Projects() {
 
             <Link href="/projects" title="More projects">
               <button aria-label="My Projects">
-                <HiExternalLink size={30} className="" />
+                <HiExternalLink size={30} />
               </button>
             </Link>
           </div>
