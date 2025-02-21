@@ -46,7 +46,7 @@ export default function Technologies() {
         {t("Technologies")}
       </div>
       <button aria-label="Technologies I use">
-        <HiExternalLink size={30} className="hover:text-white" />
+        <HiExternalLink size={30} />
       </button>
 
       {/* Background Logos */}

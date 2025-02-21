@@ -35,7 +35,7 @@ export default function Projects() {
 
             <Link href="/projects" title="More projects">
               <button aria-label="My Projects">
-                <HiExternalLink size={30} className="" />
+                <HiExternalLink size={30} />
               </button>
             </Link>
           </div>
@@ -145,7 +145,7 @@ export default function Projects() {
 
             <Link href="/projects" title="More projects">
               <button aria-label="My Projects">
-                <HiExternalLink size={30} className="" />
+                <HiExternalLink size={30} />
               </button>
             </Link>
           </div>
