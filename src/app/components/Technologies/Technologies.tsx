@@ -27,7 +27,7 @@ export default function Technologies() {
       currentLanguage === "es-br" ||
       currentLanguage === "pt" ||
       currentLanguage === "pt-br"
-      ? "text-lg 2xl:text-xl"
+      ? "text-base 2xl:text-lg"
       : "text-lg xl:text-xl";
   };
 

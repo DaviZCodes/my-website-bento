@@ -28,7 +28,7 @@ export default function Header() {
       currentLanguage === "es-br" ||
       currentLanguage === "pt" ||
       currentLanguage === "pt-br"
-      ? "lg:text-xl xl:text-base 2xl:text-lg"
+      ? "lg:text-xl xl:text-base  "
       : "lg:text-xl xl:text-lg 2xl:text-xl";
   };
 

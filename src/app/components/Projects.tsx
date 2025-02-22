@@ -9,6 +9,7 @@ import NYURDTLogoDark from "./images/nyu_rdt_dark.png";
 import GitHubLicensesRankedLogo from "./images/licenses_logo.png";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "./ThemeContext";
+import i18n from "./i18n/i18n";
 
 export default function Projects() {
   const { t } = useTranslation();
@@ -16,12 +17,22 @@ export default function Projects() {
 
   const LightOrDarkNYURDTLogo = theme === "light" ? NYURDTLogo : NYURDTLogoDark;
 
+  const getPaddingSize = () => {
+    const currentLanguage = i18n.language;
+    return currentLanguage === "es" ||
+      currentLanguage === "es-br" ||
+      currentLanguage === "pt" ||
+      currentLanguage === "pt-br"
+      ? "xl:p-5"
+      : "xl:p-5 2xl:p-6";
+  };
+
   return (
     <section>
       <div
-        className="flex flex-col border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-3 bg-[#f5e2b6]
+        className={`flex flex-col border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-3 bg-[#f5e2b6]
       dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60]
-      xl:p-5 2xl:p-6"
+      ${getPaddingSize()}`}
       >
         {/* For screens md and larger */}
         <div className="hidden md:flex md:flex-col">
