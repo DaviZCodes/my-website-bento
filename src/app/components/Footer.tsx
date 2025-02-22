@@ -7,26 +7,23 @@ import Link from "next/link";
 export default function Footer() {
   const { t } = useTranslation();
 
-  const getTextSize = () => {
+  const getTextAndPaddingSize = () => {
     const currentLanguage = i18n.language;
     return currentLanguage === "es" ||
       currentLanguage === "es-br" ||
       currentLanguage === "pt" ||
       currentLanguage === "pt-br"
-      ? "text-base"
-      : "text-lg";
+      ? "p-1 text-base"
+      : "p-2 text-base";
   };
 
   return (
     <Link href="https://github.com/DaviZCodes/my-website">
       <footer
-        className={`bg-[#fdaf67e3] p-3 rounded-xl ${getTextSize()}
+        className={`bg-[#fdaf67e3] rounded-xl ${getTextAndPaddingSize()}
   dark:bg-[#e0ee60] dark:text-[#112336]`}
       >
-        <div
-          className="text-sm
-    2xl:text-lg"
-        >
+        <div>
           &copy; {new Date().getFullYear()} {t("Footer")}
         </div>
       </footer>

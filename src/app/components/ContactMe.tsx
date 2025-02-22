@@ -4,26 +4,36 @@ import { BsGithub, BsLinkedin, BsYoutube } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import i18n from "./i18n/i18n";
 
 export default function ContactMe() {
   const { t } = useTranslation();
 
+  const getTextSizeSubheading = () => {
+    const currentLanguage = i18n.language;
+    return currentLanguage === "es" ||
+      currentLanguage === "es-br" ||
+      currentLanguage === "pt" ||
+      currentLanguage === "pt-br"
+      ? "lg:text-xl xl:text-base 2xl:text-lg"
+      : "lg:text-xl xl:text-lg 2xl:text-xl";
+  };
+
   return (
-    <section className="text-base 2xl:text-lg">
+    <section>
       <div
         className="border-2 border-yellow-50 transition duration-160 hover:border-[#fdaf67e3] rounded-xl shadow-sm p-3 bg-[#f5e2b6]
       dark:bg-[#112336] dark:text-[#e0ee60] dark:border-[#e0ee60] dark:hover:bg-[#e0ee60] dark:hover:text-[#112336]
       xl:p-5 2xl:p-6"
       >
-        <div
-          className="font-bold text-xl
-        xl:text-2xl"
-        >
-          {t("ContactMe")}
+        <div className="font-bold text-xl xl:text-2xl">{t("ContactMe")}</div>
+        <div className={`${getTextSizeSubheading()} xl:mt-1 2xl:mt-3`}>
+          {t("ContactMeDesc")}
         </div>
-        <div className="xl:mt-1 2xl:mt-3">{t("ContactMeDesc")}</div>
 
-        <div className="xl:mt-1 2xl:mt-3">Email: daviz.contactme@gmail.com</div>
+        <div className={`${getTextSizeSubheading()} xl:mt-1 2xl:mt-3`}>
+          Email: daviz.contactme@gmail.com
+        </div>
 
         <div
           className="flex justify-center mt-3 gap-2

@@ -21,6 +21,16 @@ export default function Current() {
       : "text-base";
   };
 
+  const getTextSizeCurrentRole = () => {
+    const currentLanguage = i18n.language;
+    return currentLanguage === "es" ||
+      currentLanguage === "es-br" ||
+      currentLanguage === "pt" ||
+      currentLanguage === "pt-br"
+      ? "lg:text-xl xl:text-base 2xl:text-lg"
+      : "lg:text-xl xl:text-lg 2xl:text-xl";
+  };
+
   const [currTime, setCurrTime] = useState<string | null>(null);
 
   // Function to fetch current time from API
@@ -71,7 +81,7 @@ export default function Current() {
           </div>
           <div
             className={`font-light ${getTextSize()} text-sm 
-            2xl:text-lg`}
+            2xl:text-base`}
           >
             {t("CurrentSubtitle")}
           </div>
@@ -86,7 +96,7 @@ export default function Current() {
 
       <div
         className="relative z-10 text-xl my-3
-      xl:my-6 2xl:my-10"
+      xl:my-6 2xl:my-8"
       >
         {t("CurrentRole")}
       </div>
