@@ -95,8 +95,9 @@ export default function Current() {
       </div>
 
       <div
-        className="relative z-10 text-xl my-3
-      xl:my-6 2xl:my-8"
+        className={`relative z-10 text-xl my-3
+      xl:my-6 2xl:my-8
+      ${getTextSizeCurrentRole()}`}
       >
         {t("CurrentRole")}
       </div>
