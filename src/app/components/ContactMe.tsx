@@ -16,7 +16,7 @@ export default function ContactMe() {
       currentLanguage === "pt" ||
       currentLanguage === "pt-br"
       ? "lg:text-xl xl:text-base 2xl:text-lg"
-      : "lg:text-xl xl:text-lg 2xl:text-xl";
+      : "lg:text-xl xl:text-base 2xl:text-xl";
   };
 
   return (
@@ -59,7 +59,7 @@ export default function ContactMe() {
               />
             </Link>
           </div>
-          <div className="group">
+          {/*<div className="group">
             <Link
               href="https://www.youtube.com/@davitothestars"
               target="_blank"
@@ -71,7 +71,7 @@ export default function ContactMe() {
                 className="text-[#f78f2e] group-hover:text-[#CD201F] transition duration-160 dark:text-white"
               />
             </Link>
-          </div>
+          </div>*/}
           <div className="group">
             <Link href="mailto:daviz.contactme@gmail.com">
               <span className="sr-only">{t("ContactMe")}</span>
