@@ -2,10 +2,11 @@
 
 ## My personal website 
 
-> NextJS and TailWind 
+> NextJS and Tailwind CSS 
 
 ### I turn ideas turn into reality. 
 ![Design](https://i.imgur.com/MqpKcPn.jpeg)
+![My Website](https://i.imgur.com/Du2TxBm.png)
 
 <hr>
 
