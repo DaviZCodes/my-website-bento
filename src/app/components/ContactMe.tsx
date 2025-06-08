@@ -59,19 +59,6 @@ export default function ContactMe() {
               />
             </Link>
           </div>
-          {/*<div className="group">
-            <Link
-              href="https://www.youtube.com/@davitothestars"
-              target="_blank"
-            >
-              <span className="sr-only">{t("YouTube")}</span>
-              <BsYoutube
-                size={50}
-                title={t("YouTube")}
-                className="text-[#f78f2e] group-hover:text-[#CD201F] transition duration-160 dark:text-white"
-              />
-            </Link>
-          </div>*/}
           <div className="group">
             <Link href="mailto:daviz.contactme@gmail.com">
               <span className="sr-only">{t("ContactMe")}</span>
