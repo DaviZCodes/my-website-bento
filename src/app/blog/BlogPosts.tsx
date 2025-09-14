@@ -69,6 +69,14 @@ function BlogEntry({
 
 const blogPostEntries = [
   {
+    datePosted: "September 14, 2025",
+    title: "Entry #9: Post graduation and full-time job",
+    tag: "Life Update",
+    image: "",
+    content:
+      "I graduated from college on May 14, 2025. I'm now working full-time at Amazon as a software engineer. \n\n Part of me feels like it is a lifelong dream come true, and another part of me still yearns for more. It's weird. My first dream was to go to NYU, then once I got in, my dream instantly changed to wanting to get an internship, and after I got an internship, my dream became to work a full-time job. \n\n But the thing is, I'm finally an adult now. I'm finally independent. I'm not sure what to do or if the things I'm doing are right. To be frank, I am not sure what the fuck I'm doing. But everyone seems to think I know what I'm doing. I'm working, hitting the gym, talking to more people, and starting to figure out myself. I feel that it will be a long journey, but I am looking forward to it. I know I'm rambling a lot, but this is what I have to say at the moment. ",
+  },
+  {
     datePosted: "February 19, 2025",
     title: "Entry #8: Website revamp",
     tag: "Update",

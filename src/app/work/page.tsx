@@ -35,9 +35,17 @@ export default function Work() {
         >
           <WorkExperienceCard
             href="https://www.amazon.com"
+            title="Software Engineer"
+            company="Amazon"
+            description="I just began working as a full-stack developer who worked in Amazon's seller development organization. This is my first full-time job ever!"
+            bgColor="#232f3e"
+            textColor="#f2aa3f"
+          />
+          <WorkExperienceCard
+            href="https://www.amazon.com"
             title="Software Engineer Intern"
             company="Amazon"
-            description="I was a full-stack developer who worked in Amazon's seller development organization. This has been my favorite and most insightful career experience so far."
+            description="I was a full-stack developer who worked in Amazon's seller development organization. This has been my favorite and most insightful career experience so far. Lots of dogs and milk!"
             bgColor="#232f3e"
             textColor="#f2aa3f"
           />
@@ -45,7 +53,7 @@ export default function Work() {
             href="http://bulletin.engineering.nyu.edu/preview_course_nopop.php?catoid=15&coid=36543"
             title="Teaching Assistant"
             company="New York University"
-            description="I am a teaching assistant for CS-UY 2214 - Computer Architecture and Organization, a class on low-level programming, digital logic design, and hardware design programming."
+            description="I am a teaching assistant for CS-UY 2214 - Computer Architecture and Organization, a class on low-level programming, digital logic design, and hardware design programming. Grading homework takes so long lol."
             bgColor="#4d1782"
             textColor="white"
           />
