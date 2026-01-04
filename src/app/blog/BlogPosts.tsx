@@ -69,6 +69,14 @@ function BlogEntry({
 
 const blogPostEntries = [
   {
+    datePosted: "January 3, 2026",
+    title: "Entry #10: 2026",
+    tag: "Life Update",
+    image: "",
+    content:
+      "Happy New Year! \n\n I'm at an age where shit is starting to get serious. It's 2026. It has been a decade since 2016 (one of the best years of my life). \n\n The following years will decide a big portion for the rest of my life. I know I will make some mistakes, but I hope I will become better. I have many goals I wanna accomplish this year.",
+  },
+  {
     datePosted: "September 14, 2025",
     title: "Entry #9: Post graduation and full-time job",
     tag: "Life Update",
