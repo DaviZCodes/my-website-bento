@@ -69,6 +69,13 @@ function BlogEntry({
 
 const blogPostEntries = [
   {
+    datePosted: "February 7, 2026",
+    title: "Entry #11: 2026",
+    tag: "Life Update",
+    image: "",
+    content: "Money keeps coming in, I can't lose.",
+  },
+  {
     datePosted: "January 3, 2026",
     title: "Entry #10: 2026",
     tag: "Life Update",
