@@ -70,7 +70,14 @@ function BlogEntry({
 const blogPostEntries = [
   {
     datePosted: "February 7, 2026",
-    title: "Entry #11: 2026",
+    title: "Entry #13: World Cup",
+    tag: "Life Update",
+    image: "",
+    content: "I hope Brasil (yes, that's how you spell it) wins the World Cup",
+  },
+  {
+    datePosted: "February 7, 2026",
+    title: "Entry #12: Legend",
     tag: "Life Update",
     image: "https://i.imgur.com/cJR7aiE.png",
     content: "",
