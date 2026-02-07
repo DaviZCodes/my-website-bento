@@ -72,6 +72,13 @@ const blogPostEntries = [
     datePosted: "February 7, 2026",
     title: "Entry #11: 2026",
     tag: "Life Update",
+    image: "https://i.imgur.com/cJR7aiE.png",
+    content: "",
+  },
+  {
+    datePosted: "February 7, 2026",
+    title: "Entry #11: 2026",
+    tag: "Life Update",
     image: "",
     content: "Money keeps coming in, I can't lose.",
   },
