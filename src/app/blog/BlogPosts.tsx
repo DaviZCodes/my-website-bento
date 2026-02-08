@@ -76,20 +76,6 @@ const blogPostEntries = [
     content: "I hope Brasil (yes, that's how you spell it) wins the World Cup!",
   },
   {
-    datePosted: "February 7, 2026",
-    title: "Entry #12: Legend",
-    tag: "Life Update",
-    image: "https://i.imgur.com/cJR7aiE.png",
-    content: "",
-  },
-  {
-    datePosted: "February 7, 2026",
-    title: "Entry #11: 2026",
-    tag: "Life Update",
-    image: "",
-    content: "Money keeps coming in, I can't lose.",
-  },
-  {
     datePosted: "January 3, 2026",
     title: "Entry #10: 2026",
     tag: "Life Update",
