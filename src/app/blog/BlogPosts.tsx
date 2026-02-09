@@ -69,13 +69,6 @@ function BlogEntry({
 
 const blogPostEntries = [
   {
-    datePosted: "February 7, 2026",
-    title: "Entry #11: World Cup",
-    tag: "Life Update",
-    image: "",
-    content: "I hope Brasil (yes, that's how you spell it) wins the World Cup!",
-  },
-  {
     datePosted: "January 3, 2026",
     title: "Entry #10: 2026",
     tag: "Life Update",
